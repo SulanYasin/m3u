@@ -116,10 +116,13 @@
   }
 
   function buildM3u(list) {
+    // SS IPTV (and many Smart TV players) ignore group-title attributes and
+    // show them as part of the channel name. Use #EXTGRP for folders instead.
     const lines = ["#EXTM3U", ""];
     list.forEach((channel) => {
       const group = channel.group || "Other";
-      lines.push(`#EXTINF:-1 group-title="${group}",${channel.name}`);
+      lines.push(`#EXTINF:-1,${channel.name}`);
+      lines.push(`#EXTGRP:${group}`);
       lines.push(channel.url);
       lines.push("");
     });
