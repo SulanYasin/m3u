@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Arabic TV</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>My Arabic TV</h1>
+        <button type="button" id="download-btn" class="btn">
+          Download Playlist
+        </button>
+      </header>
+
+      <main class="main">
+        <section class="player-section">
+          <video id="player" controls playsinline></video>
+          <p id="now-playing" class="now-playing">Select a channel to play</p>
+        </section>
+
+        <section class="channels-section">
+          <h2>Channels</h2>
+          <ul id="channel-list" class="channel-list"></ul>
+          <p id="status" class="status" hidden></p>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
