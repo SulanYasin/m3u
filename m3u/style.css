@@ -114,12 +114,15 @@ body {
 .channel-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 1rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   overflow: auto;
   max-height: min(70vh, 640px);
   background: var(--surface);
+  scroll-padding-top: 2.75rem;
+  scroll-padding-bottom: 1rem;
+  overscroll-behavior: contain;
 }
 
 .channel-list li {
@@ -128,6 +131,18 @@ body {
 
 .channel-list li:last-child {
   border-bottom: none;
+}
+
+.group-header {
+  padding: 0.55rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: #121a26;
+  /* sticky headers were clipping the first/last focused rows while scrolling */
+  position: static;
 }
 
 .channel-btn {
@@ -144,10 +159,14 @@ body {
   text-align: start;
   cursor: pointer;
   transition: background 0.12s ease;
+  scroll-margin-top: 0.5rem;
+  scroll-margin-bottom: 0.5rem;
 }
 
-.channel-btn:hover {
+.channel-btn:hover,
+.channel-btn:focus-visible {
   background: var(--active);
+  outline: none;
 }
 
 .channel-btn.active {

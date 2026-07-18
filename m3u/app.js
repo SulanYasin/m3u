@@ -35,8 +35,12 @@
 
     activeIndex = index;
     nowPlayingEl.textContent = `Now playing: ${channel.name}`;
-    document.querySelectorAll(".channel-btn").forEach((btn, i) => {
-      btn.classList.toggle("active", i === index);
+    document.querySelectorAll(".channel-btn").forEach((btn) => {
+      const isActive = Number(btn.dataset.index) === index;
+      btn.classList.toggle("active", isActive);
+      if (isActive) {
+        btn.scrollIntoView({ block: "nearest", inline: "nearest" });
+      }
     });
 
     const url = channel.url;
@@ -77,22 +81,45 @@
   function renderChannels() {
     channelListEl.innerHTML = "";
 
+    const byGroup = new Map();
     channels.forEach((channel, index) => {
-      const li = document.createElement("li");
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "channel-btn";
-      btn.innerHTML = `<span class="play-icon" aria-hidden="true">▶</span><span>${channel.name}</span>`;
-      btn.addEventListener("click", () => playChannel(channel, index));
-      li.appendChild(btn);
-      channelListEl.appendChild(li);
+      const group = channel.group || "Other";
+      if (!byGroup.has(group)) byGroup.set(group, []);
+      byGroup.get(group).push({ channel, index });
+    });
+
+    const groups = Array.from(byGroup.keys()).sort((a, b) =>
+      a.localeCompare(b)
+    );
+
+    groups.forEach((group) => {
+      const header = document.createElement("li");
+      header.className = "group-header";
+      header.textContent = group;
+      channelListEl.appendChild(header);
+
+      byGroup.get(group).forEach(({ channel, index }) => {
+        const li = document.createElement("li");
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "channel-btn";
+        btn.dataset.index = String(index);
+        btn.innerHTML = `<span class="play-icon" aria-hidden="true">▶</span><span>${channel.name}</span>`;
+        btn.addEventListener("click", () => playChannel(channel, index));
+        btn.addEventListener("focus", () => {
+          btn.scrollIntoView({ block: "nearest", inline: "nearest" });
+        });
+        li.appendChild(btn);
+        channelListEl.appendChild(li);
+      });
     });
   }
 
   function buildM3u(list) {
     const lines = ["#EXTM3U", ""];
     list.forEach((channel) => {
-      lines.push(`#EXTINF:-1,${channel.name}`);
+      const group = channel.group || "Other";
+      lines.push(`#EXTINF:-1 group-title="${group}",${channel.name}`);
       lines.push(channel.url);
       lines.push("");
     });

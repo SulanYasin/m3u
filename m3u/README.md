@@ -26,7 +26,10 @@ npx --yes serve .
 
 Open the shown URL, browse channels, or click **Download Playlist**.
 
-## Files
+## Playlist categories
+
+Channels are grouped with M3U `group-title` (Saudi Arabia, Syria, Egypt, News, MBC, …).
+SS IPTV and most players show these as folders.
 
 | File | Purpose |
 |------|---------|
