@@ -1,27 +1,19 @@
 [
   {
-    "name": "Aghani Aghani TV",
-    "url": "https://cdn.streamlane.tv/hls/aghanitv/index.m3u8",
-    "country": "Arab World",
-    "category": "Entertainment",
+    "name": "El-Heddaf TV",
+    "url": "https://live.elheddaftv.com:8081/elheddaftv/index.m3u8",
+    "country": "Algeria",
+    "category": "National",
     "format": "HLS",
-    "group": "Arab World | Entertainment"
+    "group": "Algeria"
   },
   {
-    "name": "Movies Action",
-    "url": "https://shd-amg-fast.edgenextcdn.net/tx011/playlist.m3u8",
-    "country": "Arab World",
-    "category": "Entertainment",
+    "name": "TV2 Algeria",
+    "url": "http://185.9.2.18/chid_347/index.m3u8",
+    "country": "Algeria",
+    "category": "General",
     "format": "HLS",
-    "group": "Arab World | Entertainment"
-  },
-  {
-    "name": "Movies Thriller",
-    "url": "https://shd-amg-fast.edgenextcdn.net/tx012/playlist.m3u8",
-    "country": "Arab World",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Arab World | Entertainment"
+    "group": "Algeria"
   },
   {
     "name": "Abdulmajeed Abdullah",
@@ -29,7 +21,7 @@
     "country": "Arab World",
     "category": "General",
     "format": "HLS",
-    "group": "Arab World | General"
+    "group": "Arab World"
   },
   {
     "name": "ABNsat",
@@ -37,151 +29,7 @@
     "country": "Arab World",
     "category": "General",
     "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Afarin Baxcha",
-    "url": "https://5dcabf026b188.streamlock.net/afarinTV/livestream/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Al Alamiya 2",
-    "url": "http://82.212.74.98:8000/live/7815.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Al Ittihad",
-    "url": "http://185.105.4.151:8080/_defapp_/ittihad/index.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Al Sharqiya Min Kabla",
-    "url": "https://svs.itworkscdn.net/kablatvlive/kabtv1.smil/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Al-Sharqiya",
-    "url": "https://5d94523502c2d.streamlock.net/home/mystream/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "ATVSat",
-    "url": "https://stream.atvsat.com/atvsatlive/smil:atvsatlive.smil/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Big Time Plus",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-big-time-plus/924283f994779a311c1389698ff7e736/index.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "CNA",
-    "url": "https://live.creacast.com/cna/stream/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Fairuz",
-    "url": "https://shd-amg-fast.edgenextcdn.net/tx029/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Majid Al Mohandis",
-    "url": "https://shd-amg-fast.edgenextcdn.net/tx019/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Maraya",
-    "url": "https://shd-amg-fast.edgenextcdn.net/tx008/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Medi1TV Afrique",
-    "url": "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Mohammed Abdo",
-    "url": "https://d2ow8h651gs7dx.cloudfront.net/out/v1/371fb663da604e659a2fb99bf89d92d4/index.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Rabeh Saqer",
-    "url": "https://shd-amg-fast.edgenextcdn.net/tx004/playlist.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Rashid AlMajed",
-    "url": "https://dphwv2ufgnfsq.cloudfront.net/out/v1/59cd80dfe93a479eb8b4d79bc6f225ca/index.m3u8",
-    "country": "Arab World",
-    "category": "General",
-    "format": "HLS",
-    "group": "Arab World | General"
-  },
-  {
-    "name": "Atfal & Mawaheb TV",
-    "url": "https://5aafcc5de91f1.streamlock.net/atfal1.com/atfal2/playlist.m3u8",
-    "country": "Arab World",
-    "category": "Kids",
-    "format": "HLS",
-    "group": "Arab World | Kids"
-  },
-  {
-    "name": "Koogi TV",
-    "url": "https://5d658d7e9f562.streamlock.net/koogi.tv/koogi.smil/playlist.m3u8",
-    "country": "Arab World",
-    "category": "Kids",
-    "format": "HLS",
-    "group": "Arab World | Kids"
-  },
-  {
-    "name": "Zarok TV Sorani",
-    "url": "https://zindisorani.zaroktv.com.tr/hls/stream.m3u8",
-    "country": "Arab World",
-    "category": "Kids",
-    "format": "HLS",
-    "group": "Arab World | Kids"
+    "group": "Arab World"
   },
   {
     "name": "Afaq TV",
@@ -189,7 +37,15 @@
     "country": "Arab World",
     "category": "National",
     "format": "HLS",
-    "group": "Arab World | National"
+    "group": "Arab World"
+  },
+  {
+    "name": "Afarin Baxcha",
+    "url": "https://5dcabf026b188.streamlock.net/afarinTV/livestream/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
   },
   {
     "name": "Afarin TV",
@@ -197,167 +53,23 @@
     "country": "Arab World",
     "category": "National",
     "format": "HLS",
-    "group": "Arab World | National"
+    "group": "Arab World"
   },
   {
-    "name": "Al Shallal TV",
-    "url": "https://amg01480-alshallalfze-alshallal-ono-q0hfg.amagi.tv/playlist.m3u8",
+    "name": "Aghani Aghani TV",
+    "url": "https://cdn.streamlane.tv/hls/aghanitv/index.m3u8",
     "country": "Arab World",
-    "category": "National",
+    "category": "Entertainment",
     "format": "HLS",
-    "group": "Arab World | National"
+    "group": "Arab World"
   },
   {
-    "name": "Al Wousta TV",
-    "url": "https://svs.itworkscdn.net/alwoustalive/alwoustatv.smil/playlist.m3u8",
+    "name": "Al Alamiya 2",
+    "url": "http://82.212.74.98:8000/live/7815.m3u8",
     "country": "Arab World",
-    "category": "National",
+    "category": "General",
     "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Alaraby 2 TV",
-    "url": "https://origin-cae-t482536.cdn.nextologies.com/63d8c759c5db83b4/25c4f89d27a79014ALA2306/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Amou Yazid TV",
-    "url": "http://mkstream.servehttp.com:1940/AmouYazid/ay1/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Amozhgary TV",
-    "url": "https://app-live.org/live/3268334b/index.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Arabica TV",
-    "url": "http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Avar TV",
-    "url": "https://avr.host247.net/live/AvarTv/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Dabanga TV",
-    "url": "https://hls.dabangasudan.org/hls/stream.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "FarmodaTV",
-    "url": "https://avr.host247.net/live/FarmodaTV/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Jawhara TV",
-    "url": "http://streaming.toutech.net:1935/live/mp4:jawharafm.sdp/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Lana TV",
-    "url": "https://cdn.streamlane.tv/hls/ltv/master.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Marina TV",
-    "url": "https://ffs.gulfsat.com/Marina-TV-HD/index.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "One TV",
-    "url": "https://hms.pfs.gdn/v1/broadcast/one/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Ritmu TV",
-    "url": "https://659605a54e9a6.streamlock.net:8443/live/livestream/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Senses TV",
-    "url": "http://31.14.41.69:8080/hls/sensesonline/index.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Shams TV",
-    "url": "https://stream.shams.tv/hls/stream.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "StoryChannel TV",
-    "url": "https://136044159.r.cdnsun.net/storychannel.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Taha TV",
-    "url": "https://stream.starmenajo.com/hls/app/live/ts:fhd.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Waar TV",
-    "url": "https://hlspackager.akamaized.net/live/DB/WAAR_HD/HLS/WAAR_HD.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
-  },
-  {
-    "name": "Wasat TV",
-    "url": "https://alwasattv.hibridcdn.net/alwasattv/alwasat_abr/playlist.m3u8",
-    "country": "Arab World",
-    "category": "National",
-    "format": "HLS",
-    "group": "Arab World | National"
+    "group": "Arab World"
   },
   {
     "name": "Al Arabiya",
@@ -365,7 +77,7 @@
     "country": "Arab World",
     "category": "News",
     "format": "HLS",
-    "group": "Arab World | News"
+    "group": "Arab World"
   },
   {
     "name": "Al Arabiya Al Hadath",
@@ -373,7 +85,7 @@
     "country": "Arab World",
     "category": "News",
     "format": "HLS",
-    "group": "Arab World | News"
+    "group": "Arab World"
   },
   {
     "name": "Al Arabiya Business",
@@ -381,7 +93,7 @@
     "country": "Arab World",
     "category": "News",
     "format": "HLS",
-    "group": "Arab World | News"
+    "group": "Arab World"
   },
   {
     "name": "Al Arabiya English",
@@ -389,7 +101,7 @@
     "country": "Arab World",
     "category": "News",
     "format": "HLS",
-    "group": "Arab World | News"
+    "group": "Arab World"
   },
   {
     "name": "Al Arabiya Programs",
@@ -397,7 +109,7 @@
     "country": "Arab World",
     "category": "News",
     "format": "HLS",
-    "group": "Arab World | News"
+    "group": "Arab World"
   },
   {
     "name": "Al Hadath",
@@ -405,7 +117,15 @@
     "country": "Arab World",
     "category": "News",
     "format": "HLS",
-    "group": "Arab World | News"
+    "group": "Arab World"
+  },
+  {
+    "name": "Al Ittihad",
+    "url": "http://185.105.4.151:8080/_defapp_/ittihad/index.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
   },
   {
     "name": "Al Mayadeen",
@@ -413,63 +133,7 @@
     "country": "Arab World",
     "category": "News",
     "format": "HLS",
-    "group": "Arab World | News"
-  },
-  {
-    "name": "Al-Sharqiya News",
-    "url": "https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8",
-    "country": "Arab World",
-    "category": "News",
-    "format": "HLS",
-    "group": "Arab World | News"
-  },
-  {
-    "name": "AL24 News",
-    "url": "https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/corp/66_al24_u4yga6h_240p/chunks.m3u8",
-    "country": "Arab World",
-    "category": "News",
-    "format": "HLS",
-    "group": "Arab World | News"
-  },
-  {
-    "name": "Alarabiya",
-    "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/alarabiapublish/alarabiya_1080p/chunks.m3u8",
-    "country": "Arab World",
-    "category": "News",
-    "format": "HLS",
-    "group": "Arab World | News"
-  },
-  {
-    "name": "ALWifak News TV",
-    "url": "http://alwifaklive.info:1935/live/myStream/playlist.m3u8",
-    "country": "Arab World",
-    "category": "News",
-    "format": "HLS",
-    "group": "Arab World | News"
-  },
-  {
-    "name": "iNEWS TV",
-    "url": "https://live.i-news.tv/hls/stream.m3u8",
-    "country": "Arab World",
-    "category": "News",
-    "format": "HLS",
-    "group": "Arab World | News"
-  },
-  {
-    "name": "Sky News Arabia",
-    "url": "https://stream.skynewsarabia.com/hls/sna.m3u8",
-    "country": "Arab World",
-    "category": "News",
-    "format": "HLS",
-    "group": "Arab World | News"
-  },
-  {
-    "name": "Sky News Arabia Vertical",
-    "url": "https://live-stream.skynewsarabia.com/c-vertical-channel/vertical-stream/index.m3u8",
-    "country": "Arab World",
-    "category": "News",
-    "format": "HLS",
-    "group": "Arab World | News"
+    "group": "Arab World"
   },
   {
     "name": "Al Resalah",
@@ -477,7 +141,263 @@
     "country": "Arab World",
     "category": "Religious",
     "format": "HLS",
-    "group": "Arab World | Religious"
+    "group": "Arab World"
+  },
+  {
+    "name": "Al Shallal TV",
+    "url": "https://amg01480-alshallalfze-alshallal-ono-q0hfg.amagi.tv/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Al Sharqiya Min Kabla",
+    "url": "https://svs.itworkscdn.net/kablatvlive/kabtv1.smil/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Al Wousta TV",
+    "url": "https://svs.itworkscdn.net/alwoustalive/alwoustatv.smil/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Al-Sharqiya",
+    "url": "https://5d94523502c2d.streamlock.net/home/mystream/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Al-Sharqiya News",
+    "url": "https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8",
+    "country": "Arab World",
+    "category": "News",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "AL24 News",
+    "url": "https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/corp/66_al24_u4yga6h_240p/chunks.m3u8",
+    "country": "Arab World",
+    "category": "News",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Alarabiya",
+    "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/alarabiapublish/alarabiya_1080p/chunks.m3u8",
+    "country": "Arab World",
+    "category": "News",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Alaraby 2 TV",
+    "url": "https://origin-cae-t482536.cdn.nextologies.com/63d8c759c5db83b4/25c4f89d27a79014ALA2306/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "ALWifak News TV",
+    "url": "http://alwifaklive.info:1935/live/myStream/playlist.m3u8",
+    "country": "Arab World",
+    "category": "News",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Amou Yazid TV",
+    "url": "http://mkstream.servehttp.com:1940/AmouYazid/ay1/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Amozhgary TV",
+    "url": "https://app-live.org/live/3268334b/index.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Arabica TV",
+    "url": "http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Atfal & Mawaheb TV",
+    "url": "https://5aafcc5de91f1.streamlock.net/atfal1.com/atfal2/playlist.m3u8",
+    "country": "Arab World",
+    "category": "Kids",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "ATVSat",
+    "url": "https://stream.atvsat.com/atvsatlive/smil:atvsatlive.smil/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Avar TV",
+    "url": "https://avr.host247.net/live/AvarTv/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Big Time Plus",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-big-time-plus/924283f994779a311c1389698ff7e736/index.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "CNA",
+    "url": "https://live.creacast.com/cna/stream/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Dabanga TV",
+    "url": "https://hls.dabangasudan.org/hls/stream.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Fairuz",
+    "url": "https://shd-amg-fast.edgenextcdn.net/tx029/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "FarmodaTV",
+    "url": "https://avr.host247.net/live/FarmodaTV/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "iNEWS TV",
+    "url": "https://live.i-news.tv/hls/stream.m3u8",
+    "country": "Arab World",
+    "category": "News",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Jawhara TV",
+    "url": "http://streaming.toutech.net:1935/live/mp4:jawharafm.sdp/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Koogi TV",
+    "url": "https://5d658d7e9f562.streamlock.net/koogi.tv/koogi.smil/playlist.m3u8",
+    "country": "Arab World",
+    "category": "Kids",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Lana TV",
+    "url": "https://cdn.streamlane.tv/hls/ltv/master.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Majid Al Mohandis",
+    "url": "https://shd-amg-fast.edgenextcdn.net/tx019/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Maraya",
+    "url": "https://shd-amg-fast.edgenextcdn.net/tx008/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Marina TV",
+    "url": "https://ffs.gulfsat.com/Marina-TV-HD/index.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Medi1TV Afrique",
+    "url": "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Mohammed Abdo",
+    "url": "https://d2ow8h651gs7dx.cloudfront.net/out/v1/371fb663da604e659a2fb99bf89d92d4/index.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Movies Action",
+    "url": "https://shd-amg-fast.edgenextcdn.net/tx011/playlist.m3u8",
+    "country": "Arab World",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Movies Thriller",
+    "url": "https://shd-amg-fast.edgenextcdn.net/tx012/playlist.m3u8",
+    "country": "Arab World",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "One TV",
+    "url": "https://hms.pfs.gdn/v1/broadcast/one/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
   },
   {
     "name": "Peace TV Bangla",
@@ -485,7 +405,7 @@
     "country": "Arab World",
     "category": "Religious",
     "format": "HLS",
-    "group": "Arab World | Religious"
+    "group": "Arab World"
   },
   {
     "name": "Peace TV Chinese",
@@ -493,7 +413,7 @@
     "country": "Arab World",
     "category": "Religious",
     "format": "HLS",
-    "group": "Arab World | Religious"
+    "group": "Arab World"
   },
   {
     "name": "Peace TV English",
@@ -501,7 +421,7 @@
     "country": "Arab World",
     "category": "Religious",
     "format": "HLS",
-    "group": "Arab World | Religious"
+    "group": "Arab World"
   },
   {
     "name": "Peace TV Urdu",
@@ -509,7 +429,103 @@
     "country": "Arab World",
     "category": "Religious",
     "format": "HLS",
-    "group": "Arab World | Religious"
+    "group": "Arab World"
+  },
+  {
+    "name": "Rabeh Saqer",
+    "url": "https://shd-amg-fast.edgenextcdn.net/tx004/playlist.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Rashid AlMajed",
+    "url": "https://dphwv2ufgnfsq.cloudfront.net/out/v1/59cd80dfe93a479eb8b4d79bc6f225ca/index.m3u8",
+    "country": "Arab World",
+    "category": "General",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Ritmu TV",
+    "url": "https://659605a54e9a6.streamlock.net:8443/live/livestream/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Senses TV",
+    "url": "http://31.14.41.69:8080/hls/sensesonline/index.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Shams TV",
+    "url": "https://stream.shams.tv/hls/stream.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Sky News Arabia",
+    "url": "https://stream.skynewsarabia.com/hls/sna.m3u8",
+    "country": "Arab World",
+    "category": "News",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Sky News Arabia Vertical",
+    "url": "https://live-stream.skynewsarabia.com/c-vertical-channel/vertical-stream/index.m3u8",
+    "country": "Arab World",
+    "category": "News",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "StoryChannel TV",
+    "url": "https://136044159.r.cdnsun.net/storychannel.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Taha TV",
+    "url": "https://stream.starmenajo.com/hls/app/live/ts:fhd.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Waar TV",
+    "url": "https://hlspackager.akamaized.net/live/DB/WAAR_HD/HLS/WAAR_HD.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Wasat TV",
+    "url": "https://alwasattv.hibridcdn.net/alwasattv/alwasat_abr/playlist.m3u8",
+    "country": "Arab World",
+    "category": "National",
+    "format": "HLS",
+    "group": "Arab World"
+  },
+  {
+    "name": "Zarok TV Sorani",
+    "url": "https://zindisorani.zaroktv.com.tr/hls/stream.m3u8",
+    "country": "Arab World",
+    "category": "Kids",
+    "format": "HLS",
+    "group": "Arab World"
   },
   {
     "name": "Bahrain International",
@@ -517,15 +533,7 @@
     "country": "Bahrain",
     "category": "National",
     "format": "HLS",
-    "group": "Bahrain | National"
-  },
-  {
-    "name": "Bahrain TV",
-    "url": "https://5c7b683162943.streamlock.net/live/ngrp:bahraintvmain_all/playlist.m3u8",
-    "country": "Bahrain",
-    "category": "National",
-    "format": "HLS",
-    "group": "Bahrain | National"
+    "group": "Bahrain"
   },
   {
     "name": "Bahrain Quran",
@@ -533,7 +541,7 @@
     "country": "Bahrain",
     "category": "Religious",
     "format": "HLS",
-    "group": "Bahrain | Religious"
+    "group": "Bahrain"
   },
   {
     "name": "Bahrain Sports 1",
@@ -541,7 +549,7 @@
     "country": "Bahrain",
     "category": "Sports",
     "format": "HLS",
-    "group": "Bahrain | Sports"
+    "group": "Bahrain"
   },
   {
     "name": "Bahrain Sports 2",
@@ -549,79 +557,15 @@
     "country": "Bahrain",
     "category": "Sports",
     "format": "HLS",
-    "group": "Bahrain | Sports"
+    "group": "Bahrain"
   },
   {
-    "name": "CBC Drama",
-    "url": "https://flu.systemnet.tv/CBCDrama/index.m3u8",
-    "country": "Egypt",
-    "category": "Entertainment",
+    "name": "Bahrain TV",
+    "url": "https://5c7b683162943.streamlock.net/live/ngrp:bahraintvmain_all/playlist.m3u8",
+    "country": "Bahrain",
+    "category": "National",
     "format": "HLS",
-    "group": "Egypt | Entertainment"
-  },
-  {
-    "name": "MBC 1 Egypt",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1-na/eec141533c90dd34722c503a296dd0d8/index.m3u8",
-    "country": "Egypt",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Egypt | Entertainment"
-  },
-  {
-    "name": "MBC Masr",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr/956eac069c78a35d47245db6cdbb1575/index.m3u8",
-    "country": "Egypt",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Egypt | Entertainment"
-  },
-  {
-    "name": "MBC Masr 2",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8",
-    "country": "Egypt",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Egypt | Entertainment"
-  },
-  {
-    "name": "MBC Masr Drama",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-drama/567b703c19ede6598222de81b0e4508b/index.m3u8",
-    "country": "Egypt",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Egypt | Entertainment"
-  },
-  {
-    "name": "Rotana Cinema Egypt",
-    "url": "https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Egypt",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Egypt | Entertainment"
-  },
-  {
-    "name": "CBC",
-    "url": "https://flu.systemnet.tv/CBC/index.m3u8",
-    "country": "Egypt",
-    "category": "General",
-    "format": "HLS",
-    "group": "Egypt | General"
-  },
-  {
-    "name": "CBC Sofra",
-    "url": "https://flu.systemnet.tv/CBCSofra/index.m3u8",
-    "country": "Egypt",
-    "category": "General",
-    "format": "HLS",
-    "group": "Egypt | General"
-  },
-  {
-    "name": "Mix Hollywood",
-    "url": "https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8",
-    "country": "Egypt",
-    "category": "General",
-    "format": "HLS",
-    "group": "Egypt | General"
+    "group": "Bahrain"
   },
   {
     "name": "Al Ghad TV",
@@ -629,7 +573,87 @@
     "country": "Egypt",
     "category": "National",
     "format": "HLS",
-    "group": "Egypt | National"
+    "group": "Egypt"
+  },
+  {
+    "name": "Al Masriyah",
+    "url": "http://185.9.2.18/chid_247/index.m3u8",
+    "country": "Egypt",
+    "category": "General",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "CBC",
+    "url": "https://flu.systemnet.tv/CBC/index.m3u8",
+    "country": "Egypt",
+    "category": "General",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "CBC Drama",
+    "url": "https://flu.systemnet.tv/CBCDrama/index.m3u8",
+    "country": "Egypt",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "CBC Sofra",
+    "url": "https://flu.systemnet.tv/CBCSofra/index.m3u8",
+    "country": "Egypt",
+    "category": "General",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "MBC 1 Egypt",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1-na/eec141533c90dd34722c503a296dd0d8/index.m3u8",
+    "country": "Egypt",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "MBC Masr",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr/956eac069c78a35d47245db6cdbb1575/index.m3u8",
+    "country": "Egypt",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "MBC Masr 2",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8",
+    "country": "Egypt",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "MBC Masr Drama",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-drama/567b703c19ede6598222de81b0e4508b/index.m3u8",
+    "country": "Egypt",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "Mix Hollywood",
+    "url": "https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8",
+    "country": "Egypt",
+    "category": "General",
+    "format": "HLS",
+    "group": "Egypt"
+  },
+  {
+    "name": "Rotana Cinema Egypt",
+    "url": "https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Egypt",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Egypt"
   },
   {
     "name": "Watan TV",
@@ -637,7 +661,7 @@
     "country": "Egypt",
     "category": "National",
     "format": "HLS",
-    "group": "Egypt | National"
+    "group": "Egypt"
   },
   {
     "name": "France 24 Arabic",
@@ -645,7 +669,7 @@
     "country": "France",
     "category": "News",
     "format": "HLS",
-    "group": "France | News"
+    "group": "France"
   },
   {
     "name": "Autentic History",
@@ -653,7 +677,23 @@
     "country": "International",
     "category": "Documentary",
     "format": "HLS",
-    "group": "International | Documentary"
+    "group": "International"
+  },
+  {
+    "name": "BBC Arabic",
+    "url": "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8",
+    "country": "International",
+    "category": "General",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "CGTN Arabic",
+    "url": "https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8",
+    "country": "International",
+    "category": "General",
+    "format": "HLS",
+    "group": "International"
   },
   {
     "name": "CGTN Documentary",
@@ -661,7 +701,7 @@
     "country": "International",
     "category": "Documentary",
     "format": "HLS",
-    "group": "International | Documentary"
+    "group": "International"
   },
   {
     "name": "Documentary+",
@@ -669,7 +709,15 @@
     "country": "International",
     "category": "Documentary",
     "format": "HLS",
-    "group": "International | Documentary"
+    "group": "International"
+  },
+  {
+    "name": "DW Arabic",
+    "url": "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8",
+    "country": "International",
+    "category": "General",
+    "format": "HLS",
+    "group": "International"
   },
   {
     "name": "History Hit",
@@ -677,7 +725,7 @@
     "country": "International",
     "category": "Documentary",
     "format": "HLS",
-    "group": "International | Documentary"
+    "group": "International"
   },
   {
     "name": "Nat Geo Wild Arabic",
@@ -685,7 +733,7 @@
     "country": "International",
     "category": "Documentary",
     "format": "HLS",
-    "group": "International | Documentary",
+    "group": "International",
     "verified": false
   },
   {
@@ -694,7 +742,15 @@
     "country": "International",
     "category": "Documentary",
     "format": "HLS",
-    "group": "International | Documentary"
+    "group": "International"
+  },
+  {
+    "name": "WildEarth",
+    "url": "https://wildearth-plex.amagi.tv/playlist.m3u8",
+    "country": "International",
+    "category": "Documentary",
+    "format": "HLS",
+    "group": "International"
   },
   {
     "name": "Al Iraqia",
@@ -702,7 +758,7 @@
     "country": "Iraq",
     "category": "General",
     "format": "HLS",
-    "group": "Iraq | General"
+    "group": "Iraq"
   },
   {
     "name": "Al Iraqia Kurdish",
@@ -710,111 +766,7 @@
     "country": "Iraq",
     "category": "General",
     "format": "HLS",
-    "group": "Iraq | General"
-  },
-  {
-    "name": "Iraq Future",
-    "url": "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_040/Stream/playlist.m3u8",
-    "country": "Iraq",
-    "category": "General",
-    "format": "HLS",
-    "group": "Iraq | General"
-  },
-  {
-    "name": "Kurdistan 24",
-    "url": "https://hlspackager.akamaized.net/live/DB/K24/HLS/K24.m3u8",
-    "country": "Iraq",
-    "category": "General",
-    "format": "HLS",
-    "group": "Iraq | General"
-  },
-  {
-    "name": "Kurdsat",
-    "url": "https://hlspackager.akamaized.net/live/DB/KURDSAT_HD/HLS/KURDSAT_HD.m3u8",
-    "country": "Iraq",
-    "category": "General",
-    "format": "HLS",
-    "group": "Iraq | General"
-  },
-  {
-    "name": "Mixkurdy",
-    "url": "https://avr.host247.net/live/Mix-kurdy/playlist.m3u8",
-    "country": "Iraq",
-    "category": "General",
-    "format": "HLS",
-    "group": "Iraq | General"
-  },
-  {
-    "name": "Zagros",
-    "url": "https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8",
-    "country": "Iraq",
-    "category": "General",
-    "format": "HLS",
-    "group": "Iraq | General"
-  },
-  {
-    "name": "Al Rasheed TV",
-    "url": "https://media1.livaat.com/static/AL-RASHEED-HD/playlist.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
-  },
-  {
-    "name": "Channel 8 Kurdish",
-    "url": "https://live.channel8.com/Channel8-Kurdish/index.fmp4.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
-  },
-  {
-    "name": "Dijlah TV",
-    "url": "https://ghaasiflu.online/Dijlah/index.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
-  },
-  {
-    "name": "Ishtar TV",
-    "url": "https://stream.ishtartv.com/live/iShtarHD/playlist.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
-  },
-  {
-    "name": "Kurdistan TV",
-    "url": "https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/playlist.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
-  },
-  {
-    "name": "Payam TV",
-    "url": "https://hlspackager.akamaized.net/live/DB/PAYAM_TV/HLS/PAYAM_TV.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
-  },
-  {
-    "name": "Rudaw TV",
-    "url": "https://hlspackager.akamaized.net/live/DB/RUDAW/HLS/RUDAW.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
-  },
-  {
-    "name": "Zagros TV",
-    "url": "https://hlspackager.akamaized.net/live/DB/ZAGROS_TV/HLS/ZAGROS_TV.m3u8",
-    "country": "Iraq",
-    "category": "National",
-    "format": "HLS",
-    "group": "Iraq | National"
+    "group": "Iraq"
   },
   {
     "name": "Al Iraqia News",
@@ -822,15 +774,7 @@
     "country": "Iraq",
     "category": "News",
     "format": "HLS",
-    "group": "Iraq | News"
-  },
-  {
-    "name": "Kurdsat News",
-    "url": "https://hlspackager.akamaized.net/live/DB/KURDSAT_NEWS/HLS/KURDSAT_NEWS.m3u8",
-    "country": "Iraq",
-    "category": "News",
-    "format": "HLS",
-    "group": "Iraq | News"
+    "group": "Iraq"
   },
   {
     "name": "Al Iraqia Sport",
@@ -838,95 +782,127 @@
     "country": "Iraq",
     "category": "Sports",
     "format": "HLS",
-    "group": "Iraq | Sports"
+    "group": "Iraq"
   },
   {
-    "name": "Jordan Comedy",
-    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Comedy/playlist.m3u8",
-    "country": "Jordan",
-    "category": "Entertainment",
+    "name": "Al Rasheed TV",
+    "url": "https://media1.livaat.com/static/AL-RASHEED-HD/playlist.m3u8",
+    "country": "Iraq",
+    "category": "National",
     "format": "HLS",
-    "group": "Jordan | Entertainment"
+    "group": "Iraq"
   },
   {
-    "name": "Jordan Drama",
-    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Drama/playlist.m3u8",
-    "country": "Jordan",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Jordan | Entertainment"
-  },
-  {
-    "name": "Roya Comedy",
-    "url": "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-comedy/playlist.m3u8",
-    "country": "Jordan",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Jordan | Entertainment"
-  },
-  {
-    "name": "Roya Drama",
-    "url": "https://playlist.fasttvcdn.com/pl/a2le4pbpa6rpzv147haf4w/drama/playlist.m3u8",
-    "country": "Jordan",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Jordan | Entertainment"
-  },
-  {
-    "name": "Jordan Archive",
-    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Archive/playlist.m3u8",
-    "country": "Jordan",
+    "name": "Al Sharqiya",
+    "url": "http://185.9.2.18/chid_144/index.m3u8",
+    "country": "Iraq",
     "category": "General",
     "format": "HLS",
-    "group": "Jordan | General"
+    "group": "Iraq"
   },
   {
-    "name": "Jordan Kitchen",
-    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/cooking/playlist.m3u8",
-    "country": "Jordan",
+    "name": "Channel 8 Kurdish",
+    "url": "https://live.channel8.com/Channel8-Kurdish/index.fmp4.m3u8",
+    "country": "Iraq",
+    "category": "National",
+    "format": "HLS",
+    "group": "Iraq"
+  },
+  {
+    "name": "Dijlah TV",
+    "url": "https://ghaasiflu.online/Dijlah/index.m3u8",
+    "country": "Iraq",
+    "category": "National",
+    "format": "HLS",
+    "group": "Iraq"
+  },
+  {
+    "name": "Iraq Future",
+    "url": "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_040/Stream/playlist.m3u8",
+    "country": "Iraq",
     "category": "General",
     "format": "HLS",
-    "group": "Jordan | General"
+    "group": "Iraq"
   },
   {
-    "name": "Jordan Songs",
-    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Song/playlist.m3u8",
-    "country": "Jordan",
+    "name": "Ishtar TV",
+    "url": "https://stream.ishtartv.com/live/iShtarHD/playlist.m3u8",
+    "country": "Iraq",
+    "category": "National",
+    "format": "HLS",
+    "group": "Iraq"
+  },
+  {
+    "name": "Kurdistan 24",
+    "url": "https://hlspackager.akamaized.net/live/DB/K24/HLS/K24.m3u8",
+    "country": "Iraq",
     "category": "General",
     "format": "HLS",
-    "group": "Jordan | General"
+    "group": "Iraq"
   },
   {
-    "name": "Jordan Tourism",
-    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Tourism/playlist.m3u8",
-    "country": "Jordan",
+    "name": "Kurdistan TV",
+    "url": "https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/playlist.m3u8",
+    "country": "Iraq",
+    "category": "National",
+    "format": "HLS",
+    "group": "Iraq"
+  },
+  {
+    "name": "Kurdsat",
+    "url": "https://hlspackager.akamaized.net/live/DB/KURDSAT_HD/HLS/KURDSAT_HD.m3u8",
+    "country": "Iraq",
     "category": "General",
     "format": "HLS",
-    "group": "Jordan | General"
+    "group": "Iraq"
   },
   {
-    "name": "Roya Kitchen",
-    "url": "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-kitchen/playlist.m3u8",
-    "country": "Jordan",
+    "name": "Kurdsat News",
+    "url": "https://hlspackager.akamaized.net/live/DB/KURDSAT_NEWS/HLS/KURDSAT_NEWS.m3u8",
+    "country": "Iraq",
+    "category": "News",
+    "format": "HLS",
+    "group": "Iraq"
+  },
+  {
+    "name": "Mixkurdy",
+    "url": "https://avr.host247.net/live/Mix-kurdy/playlist.m3u8",
+    "country": "Iraq",
     "category": "General",
     "format": "HLS",
-    "group": "Jordan | General"
+    "group": "Iraq"
   },
   {
-    "name": "Roya Kids",
-    "url": "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8",
-    "country": "Jordan",
-    "category": "Kids",
+    "name": "Payam TV",
+    "url": "https://hlspackager.akamaized.net/live/DB/PAYAM_TV/HLS/PAYAM_TV.m3u8",
+    "country": "Iraq",
+    "category": "National",
     "format": "HLS",
-    "group": "Jordan | Kids"
+    "group": "Iraq"
   },
   {
-    "name": "Roya Kids Originals",
-    "url": "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids-originals/playlist.m3u8",
-    "country": "Jordan",
-    "category": "Kids",
+    "name": "Rudaw TV",
+    "url": "https://hlspackager.akamaized.net/live/DB/RUDAW/HLS/RUDAW.m3u8",
+    "country": "Iraq",
+    "category": "National",
     "format": "HLS",
-    "group": "Jordan | Kids"
+    "group": "Iraq"
+  },
+  {
+    "name": "Zagros",
+    "url": "https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8",
+    "country": "Iraq",
+    "category": "General",
+    "format": "HLS",
+    "group": "Iraq"
+  },
+  {
+    "name": "Zagros TV",
+    "url": "https://hlspackager.akamaized.net/live/DB/ZAGROS_TV/HLS/ZAGROS_TV.m3u8",
+    "country": "Iraq",
+    "category": "National",
+    "format": "HLS",
+    "group": "Iraq"
   },
   {
     "name": "Alerth Alnabawi Channel",
@@ -934,7 +910,7 @@
     "country": "Jordan",
     "category": "National",
     "format": "HLS",
-    "group": "Jordan | National"
+    "group": "Jordan"
   },
   {
     "name": "Altaghier TV",
@@ -942,7 +918,7 @@
     "country": "Jordan",
     "category": "National",
     "format": "HLS",
-    "group": "Jordan | National"
+    "group": "Jordan"
   },
   {
     "name": "Amman TV",
@@ -950,7 +926,39 @@
     "country": "Jordan",
     "category": "National",
     "format": "HLS",
-    "group": "Jordan | National"
+    "group": "Jordan"
+  },
+  {
+    "name": "Jordan Archive",
+    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Archive/playlist.m3u8",
+    "country": "Jordan",
+    "category": "General",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Jordan Comedy",
+    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Comedy/playlist.m3u8",
+    "country": "Jordan",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Jordan Drama",
+    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Drama/playlist.m3u8",
+    "country": "Jordan",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Jordan Kitchen",
+    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/cooking/playlist.m3u8",
+    "country": "Jordan",
+    "category": "General",
+    "format": "HLS",
+    "group": "Jordan"
   },
   {
     "name": "Jordan Satellite Channel",
@@ -958,15 +966,15 @@
     "country": "Jordan",
     "category": "National",
     "format": "HLS",
-    "group": "Jordan | National"
+    "group": "Jordan"
   },
   {
-    "name": "Kaifa TV",
-    "url": "http://82.212.74.2:8000/live/7311.m3u8",
+    "name": "Jordan Songs",
+    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Song/playlist.m3u8",
     "country": "Jordan",
-    "category": "National",
+    "category": "General",
     "format": "HLS",
-    "group": "Jordan | National"
+    "group": "Jordan"
   },
   {
     "name": "Jordan Sport",
@@ -974,7 +982,71 @@
     "country": "Jordan",
     "category": "Sports",
     "format": "HLS",
-    "group": "Jordan | Sports"
+    "group": "Jordan"
+  },
+  {
+    "name": "Jordan Tourism",
+    "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Tourism/playlist.m3u8",
+    "country": "Jordan",
+    "category": "General",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Kaifa TV",
+    "url": "http://82.212.74.2:8000/live/7311.m3u8",
+    "country": "Jordan",
+    "category": "National",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Rotana Tarab Jordan",
+    "url": "http://45.63.116.205/hls3/stream1.m3u8",
+    "country": "Jordan",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Roya Comedy",
+    "url": "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-comedy/playlist.m3u8",
+    "country": "Jordan",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Roya Drama",
+    "url": "https://playlist.fasttvcdn.com/pl/a2le4pbpa6rpzv147haf4w/drama/playlist.m3u8",
+    "country": "Jordan",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Roya Kids",
+    "url": "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8",
+    "country": "Jordan",
+    "category": "Kids",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Roya Kids Originals",
+    "url": "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids-originals/playlist.m3u8",
+    "country": "Jordan",
+    "category": "Kids",
+    "format": "HLS",
+    "group": "Jordan"
+  },
+  {
+    "name": "Roya Kitchen",
+    "url": "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-kitchen/playlist.m3u8",
+    "country": "Jordan",
+    "category": "General",
+    "format": "HLS",
+    "group": "Jordan"
   },
   {
     "name": "KTV 1",
@@ -982,7 +1054,7 @@
     "country": "Kuwait",
     "category": "General",
     "format": "HLS",
-    "group": "Kuwait | General"
+    "group": "Kuwait"
   },
   {
     "name": "KTV 2",
@@ -990,7 +1062,7 @@
     "country": "Kuwait",
     "category": "General",
     "format": "HLS",
-    "group": "Kuwait | General"
+    "group": "Kuwait"
   },
   {
     "name": "KTV Al Qurain",
@@ -998,7 +1070,7 @@
     "country": "Kuwait",
     "category": "General",
     "format": "HLS",
-    "group": "Kuwait | General"
+    "group": "Kuwait"
   },
   {
     "name": "KTV Arabe",
@@ -1006,7 +1078,7 @@
     "country": "Kuwait",
     "category": "General",
     "format": "HLS",
-    "group": "Kuwait | General"
+    "group": "Kuwait"
   },
   {
     "name": "KTV Ethraa",
@@ -1014,7 +1086,7 @@
     "country": "Kuwait",
     "category": "General",
     "format": "HLS",
-    "group": "Kuwait | General"
+    "group": "Kuwait"
   },
   {
     "name": "KTV News",
@@ -1022,7 +1094,7 @@
     "country": "Kuwait",
     "category": "News",
     "format": "HLS",
-    "group": "Kuwait | News"
+    "group": "Kuwait"
   },
   {
     "name": "KTV Sport",
@@ -1030,7 +1102,7 @@
     "country": "Kuwait",
     "category": "Sports",
     "format": "HLS",
-    "group": "Kuwait | Sports"
+    "group": "Kuwait"
   },
   {
     "name": "KTV Sport Plus",
@@ -1038,47 +1110,15 @@
     "country": "Kuwait",
     "category": "Sports",
     "format": "HLS",
-    "group": "Kuwait | Sports"
+    "group": "Kuwait"
   },
   {
-    "name": "LBC",
-    "url": "https://rotana.hibridcdn.net/rotananet/lbc_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "name": "Al Jadeed",
+    "url": "http://185.9.2.18/chid_391/mono.m3u8",
     "country": "Lebanon",
     "category": "General",
     "format": "HLS",
-    "group": "Lebanon | General"
-  },
-  {
-    "name": "MTV Lebanon",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mtv-lebanon/b8ebb2a5affb812f1541712adde10e26/index.m3u8",
-    "country": "Lebanon",
-    "category": "General",
-    "format": "HLS",
-    "group": "Lebanon | General"
-  },
-  {
-    "name": "Red TV Lebanon",
-    "url": "https://live.kwikmotion.com/redtvlive/redtv.smil/playlist.m3u8",
-    "country": "Lebanon",
-    "category": "General",
-    "format": "HLS",
-    "group": "Lebanon | General"
-  },
-  {
-    "name": "Tele Liban",
-    "url": "https://cdn.catiacast.video/abr/ed8f807e2548db4507d2a6f4ba0c4a06/playlist.m3u8",
-    "country": "Lebanon",
-    "category": "General",
-    "format": "HLS",
-    "group": "Lebanon | General"
-  },
-  {
-    "name": "Voice of Lebanon",
-    "url": "https://svs.itworkscdn.net/vdltvlive/vdltv.smil/playlist.m3u8",
-    "country": "Lebanon",
-    "category": "General",
-    "format": "HLS",
-    "group": "Lebanon | General"
+    "group": "Lebanon"
   },
   {
     "name": "Future TV",
@@ -1086,7 +1126,31 @@
     "country": "Lebanon",
     "category": "National",
     "format": "HLS",
-    "group": "Lebanon | National"
+    "group": "Lebanon"
+  },
+  {
+    "name": "LBC",
+    "url": "https://rotana.hibridcdn.net/rotananet/lbc_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Lebanon",
+    "category": "General",
+    "format": "HLS",
+    "group": "Lebanon"
+  },
+  {
+    "name": "LBC International",
+    "url": "http://185.9.2.18/chid_327/index.m3u8",
+    "country": "Lebanon",
+    "category": "National",
+    "format": "HLS",
+    "group": "Lebanon"
+  },
+  {
+    "name": "MTV Lebanon",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mtv-lebanon/b8ebb2a5affb812f1541712adde10e26/index.m3u8",
+    "country": "Lebanon",
+    "category": "General",
+    "format": "HLS",
+    "group": "Lebanon"
   },
   {
     "name": "OTV",
@@ -1094,15 +1158,31 @@
     "country": "Lebanon",
     "category": "National",
     "format": "HLS",
-    "group": "Lebanon | National"
+    "group": "Lebanon"
   },
   {
-    "name": "Libya Al Wataniya",
-    "url": "https://cdn-globecast.akamaized.net/live/eds/libya_al_watanya/hls_roku/index.m3u8",
-    "country": "Libya",
+    "name": "Red TV Lebanon",
+    "url": "https://live.kwikmotion.com/redtvlive/redtv.smil/playlist.m3u8",
+    "country": "Lebanon",
     "category": "General",
     "format": "HLS",
-    "group": "Libya | General"
+    "group": "Lebanon"
+  },
+  {
+    "name": "Tele Liban",
+    "url": "https://cdn.catiacast.video/abr/ed8f807e2548db4507d2a6f4ba0c4a06/playlist.m3u8",
+    "country": "Lebanon",
+    "category": "General",
+    "format": "HLS",
+    "group": "Lebanon"
+  },
+  {
+    "name": "Voice of Lebanon",
+    "url": "https://svs.itworkscdn.net/vdltvlive/vdltv.smil/playlist.m3u8",
+    "country": "Lebanon",
+    "category": "General",
+    "format": "HLS",
+    "group": "Lebanon"
   },
   {
     "name": "Libya Al Ahrar TV",
@@ -1110,7 +1190,23 @@
     "country": "Libya",
     "category": "National",
     "format": "HLS",
-    "group": "Libya | National"
+    "group": "Libya"
+  },
+  {
+    "name": "Libya Al Wataniya",
+    "url": "https://cdn-globecast.akamaized.net/live/eds/libya_al_watanya/hls_roku/index.m3u8",
+    "country": "Libya",
+    "category": "General",
+    "format": "HLS",
+    "group": "Libya"
+  },
+  {
+    "name": "2M",
+    "url": "http://185.9.2.18/chid_218/index.m3u8",
+    "country": "Morocco",
+    "category": "General",
+    "format": "HLS",
+    "group": "Morocco"
   },
   {
     "name": "2M Monde",
@@ -1118,7 +1214,7 @@
     "country": "Morocco",
     "category": "General",
     "format": "HLS",
-    "group": "Morocco | General"
+    "group": "Morocco"
   },
   {
     "name": "2M Monde +1",
@@ -1126,7 +1222,7 @@
     "country": "Morocco",
     "category": "General",
     "format": "HLS",
-    "group": "Morocco | General"
+    "group": "Morocco"
   },
   {
     "name": "Al Aoula",
@@ -1134,7 +1230,7 @@
     "country": "Morocco",
     "category": "General",
     "format": "HLS",
-    "group": "Morocco | General"
+    "group": "Morocco"
   },
   {
     "name": "Al Aoula Inter",
@@ -1142,31 +1238,15 @@
     "country": "Morocco",
     "category": "General",
     "format": "HLS",
-    "group": "Morocco | General"
+    "group": "Morocco"
   },
   {
-    "name": "Medi 1 TV Arabic",
-    "url": "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-arabic_g90v4ec/playlist.m3u8",
+    "name": "Al Maghribia",
+    "url": "http://185.9.2.18/chid_205/index.m3u8",
     "country": "Morocco",
     "category": "General",
     "format": "HLS",
-    "group": "Morocco | General"
-  },
-  {
-    "name": "Medi 1 TV Maghreb",
-    "url": "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist.m3u8",
-    "country": "Morocco",
-    "category": "General",
-    "format": "HLS",
-    "group": "Morocco | General"
-  },
-  {
-    "name": "Chada TV",
-    "url": "https://edge13.vedge.infomaniak.com/livecast/ik:chadatv/manifest.m3u8",
-    "country": "Morocco",
-    "category": "National",
-    "format": "HLS",
-    "group": "Morocco | National"
+    "group": "Morocco"
   },
   {
     "name": "Arryadia",
@@ -1174,7 +1254,7 @@
     "country": "Morocco",
     "category": "Sports",
     "format": "HLS",
-    "group": "Morocco | Sports"
+    "group": "Morocco"
   },
   {
     "name": "Arryadia HD 1",
@@ -1182,7 +1262,7 @@
     "country": "Morocco",
     "category": "Sports",
     "format": "HLS",
-    "group": "Morocco | Sports"
+    "group": "Morocco"
   },
   {
     "name": "Arryadia HD 2",
@@ -1190,7 +1270,7 @@
     "country": "Morocco",
     "category": "Sports",
     "format": "HLS",
-    "group": "Morocco | Sports"
+    "group": "Morocco"
   },
   {
     "name": "Arryadia HD 3",
@@ -1198,7 +1278,7 @@
     "country": "Morocco",
     "category": "Sports",
     "format": "HLS",
-    "group": "Morocco | Sports"
+    "group": "Morocco"
   },
   {
     "name": "Arryadia HD TNT",
@@ -1206,7 +1286,31 @@
     "country": "Morocco",
     "category": "Sports",
     "format": "HLS",
-    "group": "Morocco | Sports"
+    "group": "Morocco"
+  },
+  {
+    "name": "Chada TV",
+    "url": "https://edge13.vedge.infomaniak.com/livecast/ik:chadatv/manifest.m3u8",
+    "country": "Morocco",
+    "category": "National",
+    "format": "HLS",
+    "group": "Morocco"
+  },
+  {
+    "name": "Medi 1 TV Arabic",
+    "url": "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-arabic_g90v4ec/playlist.m3u8",
+    "country": "Morocco",
+    "category": "General",
+    "format": "HLS",
+    "group": "Morocco"
+  },
+  {
+    "name": "Medi 1 TV Maghreb",
+    "url": "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist.m3u8",
+    "country": "Morocco",
+    "category": "General",
+    "format": "HLS",
+    "group": "Morocco"
   },
   {
     "name": "Oman Althakafia",
@@ -1214,7 +1318,7 @@
     "country": "Oman",
     "category": "General",
     "format": "HLS",
-    "group": "Oman | General"
+    "group": "Oman"
   },
   {
     "name": "Oman Mubashir",
@@ -1222,15 +1326,7 @@
     "country": "Oman",
     "category": "General",
     "format": "HLS",
-    "group": "Oman | General"
-  },
-  {
-    "name": "Oman TV",
-    "url": "https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/chunklist.m3u8",
-    "country": "Oman",
-    "category": "National",
-    "format": "HLS",
-    "group": "Oman | National"
+    "group": "Oman"
   },
   {
     "name": "Oman Sports TV",
@@ -1238,31 +1334,15 @@
     "country": "Oman",
     "category": "Sports",
     "format": "HLS",
-    "group": "Oman | Sports"
+    "group": "Oman"
   },
   {
-    "name": "Al Madina",
-    "url": "https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/index.m3u8",
-    "country": "Palestine",
-    "category": "General",
+    "name": "Oman TV",
+    "url": "https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/chunklist.m3u8",
+    "country": "Oman",
+    "category": "National",
     "format": "HLS",
-    "group": "Palestine | General"
-  },
-  {
-    "name": "Palestine Al Yawm",
-    "url": "https://live.paltodaytv.com/paltv/live/playlist_sfm4s.m3u8",
-    "country": "Palestine",
-    "category": "General",
-    "format": "HLS",
-    "group": "Palestine | General"
-  },
-  {
-    "name": "Palestine Today",
-    "url": "https://live.paltodaytv.com/paltv/live/playlist.m3u8",
-    "country": "Palestine",
-    "category": "General",
-    "format": "HLS",
-    "group": "Palestine | General"
+    "group": "Oman"
   },
   {
     "name": "Ajyal TV",
@@ -1270,47 +1350,15 @@
     "country": "Palestine",
     "category": "National",
     "format": "HLS",
-    "group": "Palestine | National"
+    "group": "Palestine"
   },
   {
-    "name": "Dr Pal TV",
-    "url": "https://stream.cisk.tech/drpal/index.m3u8",
+    "name": "Al Madina",
+    "url": "https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/index.m3u8",
     "country": "Palestine",
-    "category": "National",
+    "category": "General",
     "format": "HLS",
-    "group": "Palestine | National"
-  },
-  {
-    "name": "Falastini TV",
-    "url": "https://rp.tactivemedia.com/palestiniantv_source/live/playlist.m3u8",
-    "country": "Palestine",
-    "category": "National",
-    "format": "HLS",
-    "group": "Palestine | National"
-  },
-  {
-    "name": "Palestine Satellite Channel",
-    "url": "https://cdn-globecast.akamaized.net/live/eds/palestinian_satellite_channel/hls_roku/palestinian_satellite_channel.m3u8",
-    "country": "Palestine",
-    "category": "National",
-    "format": "HLS",
-    "group": "Palestine | National"
-  },
-  {
-    "name": "Rajeen TV",
-    "url": "https://mn-nl.mncdn.com/palabroad/live/playlist.m3u8",
-    "country": "Palestine",
-    "category": "National",
-    "format": "HLS",
-    "group": "Palestine | National"
-  },
-  {
-    "name": "Watar TV",
-    "url": "http://htvint.mada.ps:8889/orient/index.m3u8",
-    "country": "Palestine",
-    "category": "National",
-    "format": "HLS",
-    "group": "Palestine | National"
+    "group": "Palestine"
   },
   {
     "name": "Al Najah News",
@@ -1318,47 +1366,79 @@
     "country": "Palestine",
     "category": "News",
     "format": "HLS",
-    "group": "Palestine | News"
+    "group": "Palestine"
   },
   {
-    "name": "Al Jazeera Documentary",
-    "url": "https://live-hls-web-ajd.getaj.net/AJD/index.m3u8",
-    "country": "Qatar",
-    "category": "Documentary",
+    "name": "Dr Pal TV",
+    "url": "https://stream.cisk.tech/drpal/index.m3u8",
+    "country": "Palestine",
+    "category": "National",
     "format": "HLS",
-    "group": "Qatar | Documentary"
+    "group": "Palestine"
   },
   {
-    "name": "Al Araby TV 2",
-    "url": "https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8",
-    "country": "Qatar",
+    "name": "Falastini TV",
+    "url": "https://rp.tactivemedia.com/palestiniantv_source/live/playlist.m3u8",
+    "country": "Palestine",
+    "category": "National",
+    "format": "HLS",
+    "group": "Palestine"
+  },
+  {
+    "name": "Kolalnas TV",
+    "url": "https://htvint.mada.ps/kolalnas/index.m3u8",
+    "country": "Palestine",
+    "category": "National",
+    "format": "HLS",
+    "group": "Palestine"
+  },
+  {
+    "name": "Palestine Al Yawm",
+    "url": "https://live.paltodaytv.com/paltv/live/playlist_sfm4s.m3u8",
+    "country": "Palestine",
     "category": "General",
     "format": "HLS",
-    "group": "Qatar | General"
+    "group": "Palestine"
   },
   {
-    "name": "Al Rayyan",
-    "url": "https://alrayyancdn.vidgyor.com/pub-noalrayy3pwz0l/liveabr/playlist_dvr.m3u8",
-    "country": "Qatar",
-    "category": "General",
+    "name": "Palestine Satellite Channel",
+    "url": "https://cdn-globecast.akamaized.net/live/eds/palestinian_satellite_channel/hls_roku/palestinian_satellite_channel.m3u8",
+    "country": "Palestine",
+    "category": "National",
     "format": "HLS",
-    "group": "Qatar | General"
+    "group": "Palestine"
   },
   {
-    "name": "Al Rayyan Al Qadeem",
-    "url": "https://alrayyancdn.vidgyor.com/pub-nooldraybinbdh/liveabr/playlist_dvr.m3u8",
-    "country": "Qatar",
+    "name": "Palestine Today",
+    "url": "https://live.paltodaytv.com/paltv/live/playlist.m3u8",
+    "country": "Palestine",
     "category": "General",
     "format": "HLS",
-    "group": "Qatar | General"
+    "group": "Palestine"
   },
   {
-    "name": "Qatar Television 2",
-    "url": "https://live.kwikmotion.com/qtv2live/qtv2.smil/playlist.m3u8",
-    "country": "Qatar",
+    "name": "Rajeen TV",
+    "url": "https://mn-nl.mncdn.com/palabroad/live/playlist.m3u8",
+    "country": "Palestine",
+    "category": "National",
+    "format": "HLS",
+    "group": "Palestine"
+  },
+  {
+    "name": "Raya 1",
+    "url": "https://htvmada.mada.ps:4443/raya/index.m3u8",
+    "country": "Palestine",
     "category": "General",
     "format": "HLS",
-    "group": "Qatar | General"
+    "group": "Palestine"
+  },
+  {
+    "name": "Watar TV",
+    "url": "http://htvint.mada.ps:8889/orient/index.m3u8",
+    "country": "Palestine",
+    "category": "National",
+    "format": "HLS",
+    "group": "Palestine"
   },
   {
     "name": "Al Araby TV",
@@ -1366,23 +1446,15 @@
     "country": "Qatar",
     "category": "National",
     "format": "HLS",
-    "group": "Qatar | National"
+    "group": "Qatar"
   },
   {
-    "name": "Al Maaref TV",
-    "url": "https://bucharest.zeuscdn724.com/lb0/CH-AL-MA/index.m3u8",
+    "name": "Al Araby TV 2",
+    "url": "https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8",
     "country": "Qatar",
-    "category": "National",
+    "category": "General",
     "format": "HLS",
-    "group": "Qatar | National"
-  },
-  {
-    "name": "Qatar TV",
-    "url": "https://live.kwikmotion.com/qtv1live/qtv1.smil/playlist.m3u8",
-    "country": "Qatar",
-    "category": "National",
-    "format": "HLS",
-    "group": "Qatar | National"
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera",
@@ -1390,7 +1462,7 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera 2",
@@ -1398,7 +1470,7 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera Arabic",
@@ -1406,7 +1478,15 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
+  },
+  {
+    "name": "Al Jazeera Documentary",
+    "url": "https://live-hls-web-ajd.getaj.net/AJD/index.m3u8",
+    "country": "Qatar",
+    "category": "Documentary",
+    "format": "HLS",
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera English",
@@ -1414,7 +1494,7 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera English HD",
@@ -1422,7 +1502,7 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera Mubasher",
@@ -1430,7 +1510,7 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera Mubasher 24",
@@ -1438,7 +1518,7 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
   },
   {
     "name": "Al Jazeera Mubasher Broadcast 2",
@@ -1446,7 +1526,31 @@
     "country": "Qatar",
     "category": "News",
     "format": "HLS",
-    "group": "Qatar | News"
+    "group": "Qatar"
+  },
+  {
+    "name": "Al Maaref TV",
+    "url": "https://bucharest.zeuscdn724.com/lb0/CH-AL-MA/index.m3u8",
+    "country": "Qatar",
+    "category": "National",
+    "format": "HLS",
+    "group": "Qatar"
+  },
+  {
+    "name": "Al Rayyan",
+    "url": "https://alrayyancdn.vidgyor.com/pub-noalrayy3pwz0l/liveabr/playlist_dvr.m3u8",
+    "country": "Qatar",
+    "category": "General",
+    "format": "HLS",
+    "group": "Qatar"
+  },
+  {
+    "name": "Al Rayyan Al Qadeem",
+    "url": "https://alrayyancdn.vidgyor.com/pub-nooldraybinbdh/liveabr/playlist_dvr.m3u8",
+    "country": "Qatar",
+    "category": "General",
+    "format": "HLS",
+    "group": "Qatar"
   },
   {
     "name": "Alkass Four",
@@ -1454,7 +1558,7 @@
     "country": "Qatar",
     "category": "Sports",
     "format": "HLS",
-    "group": "Qatar | Sports"
+    "group": "Qatar"
   },
   {
     "name": "Alkass One",
@@ -1462,7 +1566,7 @@
     "country": "Qatar",
     "category": "Sports",
     "format": "HLS",
-    "group": "Qatar | Sports"
+    "group": "Qatar"
   },
   {
     "name": "Alkass SHOOF",
@@ -1470,7 +1574,7 @@
     "country": "Qatar",
     "category": "Sports",
     "format": "HLS",
-    "group": "Qatar | Sports"
+    "group": "Qatar"
   },
   {
     "name": "Alkass SHOOF 2",
@@ -1478,7 +1582,7 @@
     "country": "Qatar",
     "category": "Sports",
     "format": "HLS",
-    "group": "Qatar | Sports"
+    "group": "Qatar"
   },
   {
     "name": "Alkass Six",
@@ -1486,7 +1590,7 @@
     "country": "Qatar",
     "category": "Sports",
     "format": "HLS",
-    "group": "Qatar | Sports"
+    "group": "Qatar"
   },
   {
     "name": "Alkass Three",
@@ -1494,7 +1598,7 @@
     "country": "Qatar",
     "category": "Sports",
     "format": "HLS",
-    "group": "Qatar | Sports"
+    "group": "Qatar"
   },
   {
     "name": "Alkass Two",
@@ -1502,23 +1606,50 @@
     "country": "Qatar",
     "category": "Sports",
     "format": "HLS",
-    "group": "Qatar | Sports"
+    "group": "Qatar"
   },
   {
-    "name": "Asharq Discovery",
-    "url": "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Documentary",
+    "name": "Qatar Television",
+    "url": "https://qatartv.akamaized.net/hls/live/20000609/qtv1/master.m3u8",
+    "country": "Qatar",
+    "category": "General",
     "format": "HLS",
-    "group": "Saudi Arabia | Documentary"
+    "group": "Qatar"
   },
   {
-    "name": "Asharq Documentary",
-    "url": "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Documentary",
+    "name": "Qatar Television 2",
+    "url": "https://live.kwikmotion.com/qtv2live/qtv2.smil/playlist.m3u8",
+    "country": "Qatar",
+    "category": "General",
     "format": "HLS",
-    "group": "Saudi Arabia | Documentary"
+    "group": "Qatar"
+  },
+  {
+    "name": "Qatar TV",
+    "url": "https://live.kwikmotion.com/qtv1live/qtv1.smil/playlist.m3u8",
+    "country": "Qatar",
+    "category": "National",
+    "format": "HLS",
+    "group": "Qatar"
+  },
+  {
+    "name": "Qatar TV The Holy Quran",
+    "url": "https://qatartv.akamaized.net/hls/live/20000612/qtvquran/master.m3u8",
+    "country": "Qatar",
+    "category": "Religious",
+    "format": "HLS",
+    "group": "Qatar"
+  },
+  {
+    "name": "QBC",
+    "url": "https://live.kwikmotion.com/qbusinesslive/qbusiness.smil/playlist.m3u8",
+    "country": "Qatar",
+    "category": "General",
+    "format": "HLS",
+    "group": "Qatar",
+    "alt_urls": [
+      "https://googlecdn1.alkassdigital.net/livestream/qbc4/main.m3u8"
+    ]
   },
   {
     "name": "Aflam",
@@ -1526,151 +1657,7 @@
     "country": "Saudi Arabia",
     "category": "Entertainment",
     "format": "HLS",
-    "group": "Saudi Arabia | Entertainment"
-  },
-  {
-    "name": "Bab Al Hara",
-    "url": "https://shd-amg-fast.edgenextcdn.net/tx010/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Saudi Arabia | Entertainment"
-  },
-  {
-    "name": "Rotana Cinema KSA",
-    "url": "https://rotana.hibridcdn.net/rotananet/cinema_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Saudi Arabia | Entertainment"
-  },
-  {
-    "name": "Rotana Comedy",
-    "url": "https://rotana.hibridcdn.net/rotananet/comedy_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Saudi Arabia | Entertainment"
-  },
-  {
-    "name": "Rotana Drama",
-    "url": "https://rotana.hibridcdn.net/rotananet/drama_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Saudi Arabia | Entertainment"
-  },
-  {
-    "name": "Rotana Music",
-    "url": "https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Saudi Arabia | Entertainment"
-  },
-  {
-    "name": "Tarab",
-    "url": "https://shd-amg-fast-btpls.shahid.net/tx002/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Saudi Arabia | Entertainment"
-  },
-  {
-    "name": "Al Saudiya",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-saudi-tv/2ad66056b51fd8c1b624854623112e43/index.m3u8",
-    "country": "Saudi Arabia",
-    "category": "General",
-    "format": "HLS",
-    "group": "Saudi Arabia | General"
-  },
-  {
-    "name": "Al Saudiya Alaan",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-ksa-now/71ed3aa814c643306c0a8bc4fcc7d17f/index.m3u8",
-    "country": "Saudi Arabia",
-    "category": "General",
-    "format": "HLS",
-    "group": "Saudi Arabia | General"
-  },
-  {
-    "name": "Rotana Classic",
-    "url": "https://rotana.hibridcdn.net/rotananet/classical_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "General",
-    "format": "HLS",
-    "group": "Saudi Arabia | General"
-  },
-  {
-    "name": "Rotana Clip",
-    "url": "https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "General",
-    "format": "HLS",
-    "group": "Saudi Arabia | General"
-  },
-  {
-    "name": "Rotana Khalijia",
-    "url": "https://rotana.hibridcdn.net/rotananet/khaleejiya_net-7Y83PP5adWixDF93/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "General",
-    "format": "HLS",
-    "group": "Saudi Arabia | General"
-  },
-  {
-    "name": "Saudi Thaqafiya",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-thaqafeyyah/28c0d2a20dbf1dc049ce15d3973f494b/index.m3u8",
-    "country": "Saudi Arabia",
-    "category": "General",
-    "format": "HLS",
-    "group": "Saudi Arabia | General"
-  },
-  {
-    "name": "SBC",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-sbc/90e09c0c28db26435799b4a14892a167/index.m3u8",
-    "country": "Saudi Arabia",
-    "category": "General",
-    "format": "HLS",
-    "group": "Saudi Arabia | General"
-  },
-  {
-    "name": "Al Sunnah Al Nabawiyah",
-    "url": "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Madinah Live",
-    "format": "HLS",
-    "group": "Saudi Arabia | Madinah Live"
-  },
-  {
-    "name": "Al Sunnah Al Nabawiyah TV",
-    "url": "https://aloula-redirect.vercel.app/6/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Madinah Live",
-    "format": "HLS",
-    "group": "Saudi Arabia | Madinah Live"
-  },
-  {
-    "name": "Al Quran Al Kareem",
-    "url": "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Makkah Live",
-    "format": "HLS",
-    "group": "Saudi Arabia | Makkah Live"
-  },
-  {
-    "name": "Al Quran Al Kareem TV",
-    "url": "https://aloula-redirect.vercel.app/7/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Makkah Live",
-    "format": "HLS",
-    "group": "Saudi Arabia | Makkah Live"
-  },
-  {
-    "name": "Makkah TV",
-    "url": "https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Makkah Live",
-    "format": "HLS",
-    "group": "Saudi Arabia | Makkah Live"
+    "group": "Saudi Arabia"
   },
   {
     "name": "Al Ekhbariya",
@@ -1678,18 +1665,58 @@
     "country": "Saudi Arabia",
     "category": "News",
     "format": "HLS",
-    "group": "Saudi Arabia | News"
+    "group": "Saudi Arabia"
   },
   {
-    "name": "Asharq News",
-    "url": "https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/playlist_dvr.m3u8",
+    "name": "Al Quran Al Kareem",
+    "url": "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8",
     "country": "Saudi Arabia",
-    "category": "News",
+    "category": "Makkah Live",
     "format": "HLS",
-    "group": "Saudi Arabia | News",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Al Quran Al Kareem TV",
+    "url": "https://aloula-redirect.vercel.app/7/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Makkah Live",
+    "format": "HLS",
+    "group": "Saudi Arabia",
     "alt_urls": [
-      "https://live-news.asharq.com/asharq.m3u8"
+      "https://edge.taghtia.com/sa/7.m3u8"
     ]
+  },
+  {
+    "name": "Al Saudiya",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-saudi-tv/2ad66056b51fd8c1b624854623112e43/index.m3u8",
+    "country": "Saudi Arabia",
+    "category": "General",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Al Saudiya Alaan",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-ksa-now/71ed3aa814c643306c0a8bc4fcc7d17f/index.m3u8",
+    "country": "Saudi Arabia",
+    "category": "General",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Al Sunnah Al Nabawiyah",
+    "url": "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Madinah Live",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Al Sunnah Al Nabawiyah TV",
+    "url": "https://aloula-redirect.vercel.app/6/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Madinah Live",
+    "format": "HLS",
+    "group": "Saudi Arabia"
   },
   {
     "name": "Alquran",
@@ -1697,7 +1724,43 @@
     "country": "Saudi Arabia",
     "category": "Religious",
     "format": "HLS",
-    "group": "Saudi Arabia | Religious"
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Asharq Discovery",
+    "url": "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Documentary",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Asharq Documentary",
+    "url": "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Documentary",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Asharq News",
+    "url": "https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/playlist_dvr.m3u8",
+    "country": "Saudi Arabia",
+    "category": "News",
+    "format": "HLS",
+    "group": "Saudi Arabia",
+    "alt_urls": [
+      "https://live-news.asharq.com/asharq.m3u8",
+      "https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/manifest.mpd"
+    ]
+  },
+  {
+    "name": "Bab Al Hara",
+    "url": "https://shd-amg-fast.edgenextcdn.net/tx010/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Saudi Arabia"
   },
   {
     "name": "Iqraa Africa & Europe",
@@ -1705,7 +1768,7 @@
     "country": "Saudi Arabia",
     "category": "Religious",
     "format": "HLS",
-    "group": "Saudi Arabia | Religious"
+    "group": "Saudi Arabia"
   },
   {
     "name": "Iqraa Arabic",
@@ -1713,7 +1776,7 @@
     "country": "Saudi Arabia",
     "category": "Religious",
     "format": "HLS",
-    "group": "Saudi Arabia | Religious"
+    "group": "Saudi Arabia"
   },
   {
     "name": "Iqraa Quran",
@@ -1721,15 +1784,7 @@
     "country": "Saudi Arabia",
     "category": "Religious",
     "format": "HLS",
-    "group": "Saudi Arabia | Religious"
-  },
-  {
-    "name": "Thikrayat TV",
-    "url": "https://aloula-redirect.vercel.app/3/playlist.m3u8",
-    "country": "Saudi Arabia",
-    "category": "Religious",
-    "format": "HLS",
-    "group": "Saudi Arabia | Religious"
+    "group": "Saudi Arabia"
   },
   {
     "name": "KSA Sports 1",
@@ -1737,7 +1792,7 @@
     "country": "Saudi Arabia",
     "category": "Sports",
     "format": "HLS",
-    "group": "Saudi Arabia | Sports"
+    "group": "Saudi Arabia"
   },
   {
     "name": "KSA Sports 2",
@@ -1745,7 +1800,7 @@
     "country": "Saudi Arabia",
     "category": "Sports",
     "format": "HLS",
-    "group": "Saudi Arabia | Sports"
+    "group": "Saudi Arabia"
   },
   {
     "name": "KSA Sports 3",
@@ -1753,7 +1808,103 @@
     "country": "Saudi Arabia",
     "category": "Sports",
     "format": "HLS",
-    "group": "Saudi Arabia | Sports"
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Makkah TV",
+    "url": "https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Makkah Live",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Cinema KSA",
+    "url": "https://rotana.hibridcdn.net/rotananet/cinema_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Classic",
+    "url": "https://rotana.hibridcdn.net/rotananet/classical_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "General",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Clip",
+    "url": "https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "General",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Comedy",
+    "url": "https://rotana.hibridcdn.net/rotananet/comedy_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Drama",
+    "url": "https://rotana.hibridcdn.net/rotananet/drama_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Khalijia",
+    "url": "https://rotana.hibridcdn.net/rotananet/khaleejiya_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "General",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Music",
+    "url": "https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Saudi Thaqafiya",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-thaqafeyyah/28c0d2a20dbf1dc049ce15d3973f494b/index.m3u8",
+    "country": "Saudi Arabia",
+    "category": "General",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "SBC",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-sbc/90e09c0c28db26435799b4a14892a167/index.m3u8",
+    "country": "Saudi Arabia",
+    "category": "General",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Tarab",
+    "url": "https://shd-amg-fast-btpls.shahid.net/tx002/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Thikrayat TV",
+    "url": "https://aloula-redirect.vercel.app/3/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Religious",
+    "format": "HLS",
+    "group": "Saudi Arabia"
   },
   {
     "name": "Sudan TV",
@@ -1761,25 +1912,7 @@
     "country": "Sudan",
     "category": "National",
     "format": "HLS",
-    "group": "Sudan | National"
-  },
-  {
-    "name": "Syrian Education TV",
-    "url": "http://82.137.248.20:1935/SEdu/SEduLive3/playlist.m3u8",
-    "country": "Syria",
-    "category": "Education",
-    "format": "HLS",
-    "group": "Syria | Education",
-    "verified": false
-  },
-  {
-    "name": "Syria Drama",
-    "url": "http://82.137.248.21:1935/Drama/DramaLive3/playlist.m3u8",
-    "country": "Syria",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "Syria | Entertainment",
-    "verified": false
+    "group": "Sudan"
   },
   {
     "name": "Al-Souriya TV",
@@ -1787,7 +1920,15 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National"
+    "group": "Syria"
+  },
+  {
+    "name": "Alalam News Syria",
+    "url": "https://live2.alalam.ir/live/Alalam/index.m3u8",
+    "country": "Syria",
+    "category": "News",
+    "format": "HLS",
+    "group": "Syria"
   },
   {
     "name": "Althania",
@@ -1795,7 +1936,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National"
+    "group": "Syria"
   },
   {
     "name": "Halab Today TV",
@@ -1803,7 +1944,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National",
+    "group": "Syria",
     "alt_urls": [
       "https://halabtoday-live.lg.mncdn.com/halabtoday/livestream/playlist.m3u8"
     ]
@@ -1814,7 +1955,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National"
+    "group": "Syria"
   },
   {
     "name": "Ronahi TV",
@@ -1822,7 +1963,16 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National"
+    "group": "Syria"
+  },
+  {
+    "name": "Syria Drama",
+    "url": "http://82.137.248.21:1935/Drama/DramaLive3/playlist.m3u8",
+    "country": "Syria",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "Syria",
+    "verified": false
   },
   {
     "name": "Syria One",
@@ -1830,7 +1980,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National"
+    "group": "Syria"
   },
   {
     "name": "Syria Satellite Channel",
@@ -1838,7 +1988,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National",
+    "group": "Syria",
     "verified": false
   },
   {
@@ -1847,11 +1997,29 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National",
+    "group": "Syria",
     "alt_urls": [
       "https://live.kwikmotion.com/syriatvlive/syriatv.smil/playlist_dvr.m3u8",
       "https://stream.ads.ottera.tv/playlist.m3u8?network_id=6017"
     ]
+  },
+  {
+    "name": "Syrian Education TV",
+    "url": "http://82.137.248.20:1935/SEdu/SEduLive3/playlist.m3u8",
+    "country": "Syria",
+    "category": "Education",
+    "format": "HLS",
+    "group": "Syria",
+    "verified": false
+  },
+  {
+    "name": "Syrian News Channel",
+    "url": "http://82.137.248.16:1935/Snews/SnewsLive3/playlist.m3u8",
+    "country": "Syria",
+    "category": "News",
+    "format": "HLS",
+    "group": "Syria",
+    "verified": false
   },
   {
     "name": "Ugarit TV",
@@ -1859,7 +2027,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National",
+    "group": "Syria",
     "verified": false
   },
   {
@@ -1868,24 +2036,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria | National"
-  },
-  {
-    "name": "Alalam News Syria",
-    "url": "https://live2.alalam.ir/live/Alalam/index.m3u8",
-    "country": "Syria",
-    "category": "News",
-    "format": "HLS",
-    "group": "Syria | News"
-  },
-  {
-    "name": "Syrian News Channel",
-    "url": "http://82.137.248.16:1935/Snews/SnewsLive3/playlist.m3u8",
-    "country": "Syria",
-    "category": "News",
-    "format": "HLS",
-    "group": "Syria | News",
-    "verified": false
+    "group": "Syria"
   },
   {
     "name": "El Watania 1",
@@ -1893,7 +2044,7 @@
     "country": "Tunisia",
     "category": "General",
     "format": "HLS",
-    "group": "Tunisia | General"
+    "group": "Tunisia"
   },
   {
     "name": "El Watania 2",
@@ -1901,107 +2052,7 @@
     "country": "Tunisia",
     "category": "General",
     "format": "HLS",
-    "group": "Tunisia | General"
-  },
-  {
-    "name": "National Geographic Abu Dhabi",
-    "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8",
-    "country": "UAE",
-    "category": "Documentary",
-    "format": "HLS",
-    "group": "UAE | Documentary",
-    "alt_urls": [
-      "https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8"
-    ],
-    "verified": false
-  },
-  {
-    "name": "MBC 1",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC 4",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC 5",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC Bollywood",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC Drama",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-drama/2c28a458e2f3253e678b07ac7d13fe71/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC Iraq",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39cb5b90203691e/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC Mood",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-mood/78367bf48ccdba501d0d014a10c21031/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC Persia",
-    "url": "https://hls.mbcpersia.live/hls/stream.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "MBC+ Drama",
-    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8",
-    "country": "UAE",
-    "category": "Entertainment",
-    "format": "HLS",
-    "group": "UAE | Entertainment"
-  },
-  {
-    "name": "Sharjah 2",
-    "url": "https://svs.itworkscdn.net/smc2live/smc2tv.smil/playlist.m3u8",
-    "country": "UAE",
-    "category": "General",
-    "format": "HLS",
-    "group": "UAE | General"
-  },
-  {
-    "name": "Spacetoon Arabic",
-    "url": "https://live-uae-next.spacetoongo.com/ST_MENA_NEXT/hls/r9p2hjipmw2kl.m3u8",
-    "country": "UAE",
-    "category": "Kids",
-    "format": "HLS",
-    "group": "UAE | Kids"
+    "group": "Tunisia"
   },
   {
     "name": "Ajman TV",
@@ -2009,7 +2060,7 @@
     "country": "UAE",
     "category": "National",
     "format": "HLS",
-    "group": "UAE | National"
+    "group": "UAE"
   },
   {
     "name": "Al Qamar TV",
@@ -2017,7 +2068,7 @@
     "country": "UAE",
     "category": "National",
     "format": "HLS",
-    "group": "UAE | National"
+    "group": "UAE"
   },
   {
     "name": "Al Yaum TV",
@@ -2025,15 +2076,7 @@
     "country": "UAE",
     "category": "National",
     "format": "HLS",
-    "group": "UAE | National"
-  },
-  {
-    "name": "Sharjah TV",
-    "url": "https://live.kwikmotion.com/smc1live/smc1tv.smil/playlist.m3u8",
-    "country": "UAE",
-    "category": "National",
-    "format": "HLS",
-    "group": "UAE | National"
+    "group": "UAE"
   },
   {
     "name": "CNBC Arabiya",
@@ -2041,7 +2084,123 @@
     "country": "UAE",
     "category": "News",
     "format": "HLS",
-    "group": "UAE | News"
+    "group": "UAE"
+  },
+  {
+    "name": "Dubai TV International",
+    "url": "http://185.9.2.18/chid_139/index.m3u8",
+    "country": "UAE",
+    "category": "National",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC 1",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC 4",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC 5",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC Bollywood",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC Drama",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-drama/2c28a458e2f3253e678b07ac7d13fe71/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC Iraq",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39cb5b90203691e/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC Mood",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-mood/78367bf48ccdba501d0d014a10c21031/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC Persia",
+    "url": "https://hls.mbcpersia.live/hls/stream.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC+ Drama",
+    "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "National Geographic Abu Dhabi",
+    "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8",
+    "country": "UAE",
+    "category": "Documentary",
+    "format": "HLS",
+    "group": "UAE",
+    "alt_urls": [
+      "https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Sharjah 2",
+    "url": "https://svs.itworkscdn.net/smc2live/smc2tv.smil/playlist.m3u8",
+    "country": "UAE",
+    "category": "General",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "Sharjah TV",
+    "url": "https://live.kwikmotion.com/smc1live/smc1tv.smil/playlist.m3u8",
+    "country": "UAE",
+    "category": "National",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "Spacetoon Arabic",
+    "url": "https://live-uae-next.spacetoongo.com/ST_MENA_NEXT/hls/r9p2hjipmw2kl.m3u8",
+    "country": "UAE",
+    "category": "Kids",
+    "format": "HLS",
+    "group": "UAE"
   },
   {
     "name": "Al Masar TV",
@@ -2049,7 +2208,7 @@
     "country": "Yemen",
     "category": "National",
     "format": "HLS",
-    "group": "Yemen | National"
+    "group": "Yemen"
   },
   {
     "name": "Yemen Today TV",
@@ -2057,7 +2216,7 @@
     "country": "Yemen",
     "category": "National",
     "format": "HLS",
-    "group": "Yemen | National"
+    "group": "Yemen"
   },
   {
     "name": "Yemen TV",
@@ -2065,7 +2224,7 @@
     "country": "Yemen",
     "category": "National",
     "format": "HLS",
-    "group": "Yemen | National"
+    "group": "Yemen"
   },
   {
     "name": "Al Riyadh Radio",
@@ -2201,11 +2360,38 @@
     "country": "Radio",
     "category": "Radio",
     "format": "HLS",
-    "group": "Radio"
+    "group": "Radio",
+    "alt_urls": [
+      "https://edge.taghtia.com/sa/13.m3u8"
+    ]
   },
   {
     "name": "Radio Albalad TV",
     "url": "http://streaming.zaytonatube.com:8080/radioalbalad/radioalbalad/playlist.m3u8",
+    "country": "Radio",
+    "category": "Radio",
+    "format": "HLS",
+    "group": "Radio"
+  },
+  {
+    "name": "Radio Fann Jordan",
+    "url": "http://45.63.116.205/hls2/stream1.m3u8",
+    "country": "Radio",
+    "category": "Radio",
+    "format": "HLS",
+    "group": "Radio"
+  },
+  {
+    "name": "Radio Yaqeen Jordan",
+    "url": "http://45.63.116.205/hls4/stream1.m3u8",
+    "country": "Radio",
+    "category": "Radio",
+    "format": "HLS",
+    "group": "Radio"
+  },
+  {
+    "name": "Rotana Radio Jordan",
+    "url": "http://45.63.116.205/hls/stream1.m3u8",
     "country": "Radio",
     "category": "Radio",
     "format": "HLS",

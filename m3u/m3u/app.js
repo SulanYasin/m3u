@@ -80,10 +80,14 @@
 
   function getGroup(channel) {
     if (channel.category === "Radio" || channel.group === "Radio") return "Radio";
-    if (channel.group) return channel.group;
-    const country = channel.country || "Other";
-    const category = channel.category || "General";
-    return `${country} | ${category}`;
+    if (channel.country) return channel.country;
+    if (channel.group) {
+      // Legacy "Country | Category" → Country only
+      return channel.group.includes("|")
+        ? channel.group.split("|")[0].trim()
+        : channel.group;
+    }
+    return "Other";
   }
 
   function renderChannels() {
@@ -99,10 +103,7 @@
     const groups = Array.from(byGroup.keys()).sort((a, b) => {
       if (a === "Radio") return 1;
       if (b === "Radio") return -1;
-      const [aCountry, aCat] = a.split(" | ");
-      const [bCountry, bCat] = b.split(" | ");
-      const countryCmp = aCountry.localeCompare(bCountry);
-      return countryCmp !== 0 ? countryCmp : aCat.localeCompare(bCat);
+      return a.localeCompare(b);
     });
 
     groups.forEach((group) => {

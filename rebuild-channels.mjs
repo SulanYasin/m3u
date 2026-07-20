@@ -33,10 +33,14 @@ function cleanName(name) {
 }
 
 function getFormat(url) {
-  if (/\.m3u8(\?|$)/i.test(url)) return "HLS";
   if (/\.mpd(\?|$)/i.test(url)) return "DASH";
-  if (/\.ts(\?|$)/i.test(url)) return "TS";
+  if (/\.m3u8(\?|$)/i.test(url)) return "HLS";
+  if (/\.ts(\?|$)/i.test(url)) return "MPEG-TS";
+  if (/\.mp4(\?|$)/i.test(url)) return "MP4";
   if (/^rtmp:\/\//i.test(url)) return "RTMP";
+  if (/^rtsp:\/\//i.test(url)) return "RTSP";
+  if (/^(udp|rtp):\/\//i.test(url)) return "UDP/RTP";
+  if (/\.m3u(\?|$)/i.test(url)) return "M3U";
   return "Stream";
 }
 
@@ -97,7 +101,7 @@ function getCategory(name, oldGroup) {
   if (/quran al kareem|al quran al kareem/.test(n) && !/radio/.test(n)) return "Makkah Live";
   if (/sunnah al nabawiyah|madinah|medina/.test(n)) return "Madinah Live";
   if (/radio|\bfm\b|9090|onefm|mosaique|\bmfm\b|nogoumfmtv/.test(n)) return "Radio";
-  if (/documentary|discovery|national geographic|nat geo|history hit|autentic|asharq disc|karbala doc|cgtn doc|jazeera documentary/.test(n)) return "Documentary";
+  if (/documentary|discovery|national geographic|nat geo|history hit|autentic|asharq disc|karbala doc|cgtn doc|jazeera documentary|wildearth/.test(n)) return "Documentary";
   if (/sport|alkass|ksa sports|arryadia|sharjah sport|bahrain sport|oman sport|jordan sport/.test(n)) return "Sports";
   if (/spacetoon|kids|koogi|roya kids|atfal|zarok|majid tv/.test(n)) return "Kids";
   if (/drama|movie|aflam|cinema|bollywood|comedy|bab al hara|tarab|entertainment|rotana music|aghani/.test(n)) return "Entertainment";
@@ -115,12 +119,13 @@ function getCategory(name, oldGroup) {
 }
 
 function applyGroupFields(item) {
+  // Folders are Country only (e.g. Syria / Channel), except Radio.
   if (item.category === "Radio") {
     item.country = "Radio";
     item.category = "Radio";
     item.group = "Radio";
   } else {
-    item.group = `${item.country} | ${item.category}`;
+    item.group = item.country || "Other";
   }
   return item;
 }
@@ -260,9 +265,35 @@ const extras = [
   { name: "National Geographic Abu Dhabi", url: "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8", country: "UAE", category: "Documentary", verified: false },
   { name: "National Geographic Abu Dhabi (Mangomolo)", url: "https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8", country: "UAE", category: "Documentary", verified: false },
   { name: "Nat Geo Wild Arabic", url: "https://saran-live.ercdn.net/natgeowild/index.m3u8", country: "International", category: "Documentary", verified: false },
+  { name: "WildEarth", url: "https://wildearth-plex.amagi.tv/playlist.m3u8", country: "International", category: "Documentary" },
   { name: "Al Quran Al Kareem TV (Globecast)", url: "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8", country: "Saudi Arabia", category: "Makkah Live" },
+  { name: "Al Quran Al Kareem TV (Taghtia)", url: "https://edge.taghtia.com/sa/7.m3u8", country: "Saudi Arabia", category: "Makkah Live" },
   { name: "Al Sunnah Al Nabawiyah TV (Globecast)", url: "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8", country: "Saudi Arabia", category: "Madinah Live" },
   { name: "Asharq News (Direct)", url: "https://live-news.asharq.com/asharq.m3u8", country: "Saudi Arabia", category: "News" },
+  { name: "Asharq News (DASH)", url: "https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/manifest.mpd", country: "Saudi Arabia", category: "News" },
+  { name: "Quran Radio (Taghtia)", url: "https://edge.taghtia.com/sa/13.m3u8", country: "Radio", category: "Radio" },
+  { name: "BBC Arabic", url: "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8", country: "International", category: "News" },
+  { name: "DW Arabic", url: "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8", country: "International", category: "News" },
+  { name: "CGTN Arabic", url: "https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8", country: "International", category: "News" },
+  { name: "Al Masriyah", url: "http://185.9.2.18/chid_247/index.m3u8", country: "Egypt", category: "National" },
+  { name: "Dubai TV International", url: "http://185.9.2.18/chid_139/index.m3u8", country: "UAE", category: "National" },
+  { name: "Al Jadeed", url: "http://185.9.2.18/chid_391/mono.m3u8", country: "Lebanon", category: "News" },
+  { name: "LBC International", url: "http://185.9.2.18/chid_327/index.m3u8", country: "Lebanon", category: "Entertainment" },
+  { name: "Qatar Television", url: "https://qatartv.akamaized.net/hls/live/20000609/qtv1/master.m3u8", country: "Qatar", category: "National" },
+  { name: "Qatar TV The Holy Quran", url: "https://qatartv.akamaized.net/hls/live/20000612/qtvquran/master.m3u8", country: "Qatar", category: "Religious" },
+  { name: "QBC", url: "https://live.kwikmotion.com/qbusinesslive/qbusiness.smil/playlist.m3u8", country: "Qatar", category: "News" },
+  { name: "QBC (Alkass)", url: "https://googlecdn1.alkassdigital.net/livestream/qbc4/main.m3u8", country: "Qatar", category: "News" },
+  { name: "Kolalnas TV", url: "https://htvint.mada.ps/kolalnas/index.m3u8", country: "Palestine", category: "National" },
+  { name: "Raya 1", url: "https://htvmada.mada.ps:4443/raya/index.m3u8", country: "Palestine", category: "National" },
+  { name: "Al Sharqiya", url: "http://185.9.2.18/chid_144/index.m3u8", country: "Iraq", category: "National" },
+  { name: "2M", url: "http://185.9.2.18/chid_218/index.m3u8", country: "Morocco", category: "National" },
+  { name: "Al Maghribia", url: "http://185.9.2.18/chid_205/index.m3u8", country: "Morocco", category: "National" },
+  { name: "TV2 Algeria", url: "http://185.9.2.18/chid_347/index.m3u8", country: "Algeria", category: "National" },
+  { name: "El-Heddaf TV", url: "https://live.elheddaftv.com:8081/elheddaftv/index.m3u8", country: "Algeria", category: "Sports" },
+  { name: "Radio Fann Jordan", url: "http://45.63.116.205/hls2/stream1.m3u8", country: "Radio", category: "Radio" },
+  { name: "Radio Yaqeen Jordan", url: "http://45.63.116.205/hls4/stream1.m3u8", country: "Radio", category: "Radio" },
+  { name: "Rotana Radio Jordan", url: "http://45.63.116.205/hls/stream1.m3u8", country: "Radio", category: "Radio" },
+  { name: "Rotana Tarab Jordan", url: "http://45.63.116.205/hls3/stream1.m3u8", country: "Jordan", category: "Entertainment" },
 ];
 
 const existing = JSON.parse(fs.readFileSync(`${ROOT}/channels.json`, "utf8"));
@@ -301,7 +332,7 @@ for (const e of extras) {
 // Merge by normalized name
 const byName = new Map();
 for (const ch of byUrl.values()) {
-  const key = nameKey(ch.name.replace(/\s*\((alt|cdn|ottera|mangomolo|globecast|direct|kwikmotion)\)\s*/i, ""));
+  const key = nameKey(ch.name.replace(/\s*\((alt|cdn|ottera|mangomolo|globecast|direct|kwikmotion|taghtia|dash|alkass)\)\s*/i, ""));
   if (!byName.has(key)) {
     byName.set(key, []);
   }
@@ -310,10 +341,13 @@ for (const ch of byUrl.values()) {
 
 function score(ch) {
   let s = 0;
-  if (ch.format === "HLS") s += 10;
+  if (ch.format === "HLS") s += 12;
+  else if (ch.format === "DASH") s += 6;
+  else if (ch.format === "MPEG-TS") s += 4;
+  else if (ch.format === "MP4") s += 3;
   if (ch.url.startsWith("https://")) s += 5;
   if (ch.verified !== false) s += 3;
-  if (!/\(alt\)|\(cdn\)|\(ottera\)|\(mangomolo\)|\(globecast\)|\(direct\)|\(kwikmotion\)/i.test(ch.name)) s += 2;
+  if (!/\(alt\)|\(cdn\)|\(ottera\)|\(mangomolo\)|\(globecast\)|\(direct\)|\(kwikmotion\)|\(taghtia\)|\(dash\)|\(alkass\)/i.test(ch.name)) s += 2;
   return s;
 }
 
@@ -323,7 +357,7 @@ for (const entries of byName.values()) {
   const primary = entries[0];
   const alt_urls = [...new Set(entries.slice(1).map((e) => e.url).filter((u) => u !== primary.url))];
   const item = applyGroupFields({
-    name: primary.name.replace(/\s*\((alt|cdn|ottera|mangomolo|globecast|direct|kwikmotion)\)\s*/i, ""),
+    name: primary.name.replace(/\s*\((alt|cdn|ottera|mangomolo|globecast|direct|kwikmotion|taghtia|dash|alkass)\)\s*/i, ""),
     url: primary.url,
     country: primary.country,
     category: primary.category,
@@ -337,11 +371,8 @@ for (const entries of byName.values()) {
 final.sort((a, b) => {
   if (a.group === "Radio" && b.group !== "Radio") return 1;
   if (b.group === "Radio" && a.group !== "Radio") return -1;
-  if (a.group === "Radio") return a.name.localeCompare(b.name);
-  const c = a.country.localeCompare(b.country);
+  const c = a.group.localeCompare(b.group);
   if (c) return c;
-  const g = a.category.localeCompare(b.category);
-  if (g) return g;
   return a.name.localeCompare(b.name);
 });
 
@@ -393,3 +424,16 @@ console.log(`Makkah/Madinah: ${makkah.length}`);
 makkah.forEach((c) => console.log(`  ${c.name} [${c.category}]${c.verified === false ? " (unverified)" : ""}`));
 console.log(`Documentary: ${docs.length}`);
 docs.forEach((c) => console.log(`  ${c.name} (${c.country})${c.verified === false ? " (unverified)" : ""}`));
+
+const fmtCounts = {};
+for (const c of final) {
+  fmtCounts[c.format] = (fmtCounts[c.format] || 0) + 1;
+  if (c.alt_urls) {
+    for (const u of c.alt_urls) {
+      const f = getFormat(u);
+      fmtCounts[`alt:${f}`] = (fmtCounts[`alt:${f}`] || 0) + 1;
+    }
+  }
+}
+console.log("--- Formats ---");
+Object.entries(fmtCounts).sort((a,b)=>b[1]-a[1]).forEach(([k,v]) => console.log(`  ${v} ${k}`));
