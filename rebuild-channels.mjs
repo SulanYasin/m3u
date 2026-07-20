@@ -294,6 +294,28 @@ const extras = [
   { name: "Radio Yaqeen Jordan", url: "http://45.63.116.205/hls4/stream1.m3u8", country: "Radio", category: "Radio" },
   { name: "Rotana Radio Jordan", url: "http://45.63.116.205/hls/stream1.m3u8", country: "Radio", category: "Radio" },
   { name: "Rotana Tarab Jordan", url: "http://45.63.116.205/hls3/stream1.m3u8", country: "Jordan", category: "Entertainment" },
+  // Verified missing from iptv-org MENA + yazki/ara sources (Jul 2026)
+  { name: "Elwatania TV", url: "https://livesstream.work.gd:5443/WebRTCApp/streams/stream.m3u8", country: "Algeria", category: "National" },
+  { name: "Mekameleen TV", url: "https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/playlist.m3u8", country: "Egypt", category: "News" },
+  { name: "Ahl-Alquran TV", url: "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8", country: "Saudi Arabia", category: "Religious" },
+  { name: "Alhurra", url: "https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900/MBN_Alhurra_Worldsafe_HLS/master.m3u8", country: "International", category: "News" },
+  { name: "Alhurra Iraq", url: "https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038899/MBN_Iraq_Worldsafe_HLS/master.m3u8", country: "Iraq", category: "News" },
+  { name: "Al-Naeem TV", url: "http://37.238.136.61/hls/stream.m3u8", country: "Iraq", category: "National" },
+  { name: "AVA Family", url: "https://familyhls.avatv.live/hls/stream.m3u8", country: "Iraq", category: "Entertainment" },
+  { name: "Hala TV", url: "https://gstream4.panet.co.il/edge/halaTV/playlist.m3u8", country: "Palestine", category: "National" },
+  { name: "Melody FM Jordan", url: "https://cdn3.wowza.com/1/OVRrOWxXUEswS2Yv/eGVxSWZy/hls/live/playlist.m3u8", country: "Radio", category: "Radio" },
+  { name: "Ch4Teen Documentary", url: "https://ch14.tv/live/ch4teendoc/playlist.m3u8", country: "Kuwait", category: "Documentary" },
+  { name: "Al Khalij", url: "https://mn-nl.mncdn.com/khalij/khalij/playlist.m3u8", country: "Kuwait", category: "National" },
+  { name: "Assirat TV", url: "https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8", country: "Lebanon", category: "Religious" },
+  { name: "Assirat TV (CDN)", url: "https://svs.itworkscdn.net/assiratvlive/assirat/playlist.m3u8", country: "Lebanon", category: "Religious" },
+  { name: "Tanasuh TV", url: "https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8", country: "Libya", category: "National" },
+  { name: "Musawa", url: "https://pbc.furrera.ps/musawahd/index.m3u8", country: "Palestine", category: "National" },
+  { name: "Palestine Edu", url: "https://pbc.furrera.ps/PalestineEDU/index.m3u8", country: "Palestine", category: "Education" },
+  { name: "Palestine Mubasher", url: "https://pbc.furrera.ps/palestinelivehd/index.m3u8", country: "Palestine", category: "News" },
+  { name: "Al-Sahat TV", url: "https://assahat.b-cdn.net/Assahat/assahatobs/index.m3u8", country: "Yemen", category: "Religious" },
+  { name: "Alhiwar TV", url: "https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8", country: "International", category: "News" },
+  { name: "Asil TV", url: "https://live.asil.tv/asiltv/index.m3u8", country: "Arab World", category: "Entertainment" },
+  { name: "Hala London", url: "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8", country: "International", category: "Entertainment" },
 ];
 
 const existing = JSON.parse(fs.readFileSync(`${ROOT}/channels.json`, "utf8"));
