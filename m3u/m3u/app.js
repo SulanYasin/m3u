@@ -78,19 +78,29 @@
     setStatus("HLS playback is not supported in this browser.", true);
   }
 
+  function getGroup(channel) {
+    if (channel.group) return channel.group;
+    const country = channel.country || "Other";
+    const category = channel.category || "General";
+    return `${country} | ${category}`;
+  }
+
   function renderChannels() {
     channelListEl.innerHTML = "";
 
     const byGroup = new Map();
     channels.forEach((channel, index) => {
-      const group = channel.group || "Other";
+      const group = getGroup(channel);
       if (!byGroup.has(group)) byGroup.set(group, []);
       byGroup.get(group).push({ channel, index });
     });
 
-    const groups = Array.from(byGroup.keys()).sort((a, b) =>
-      a.localeCompare(b)
-    );
+    const groups = Array.from(byGroup.keys()).sort((a, b) => {
+      const [aCountry, aCat] = a.split(" | ");
+      const [bCountry, bCat] = b.split(" | ");
+      const countryCmp = aCountry.localeCompare(bCountry);
+      return countryCmp !== 0 ? countryCmp : aCat.localeCompare(bCat);
+    });
 
     groups.forEach((group) => {
       const header = document.createElement("li");
@@ -104,7 +114,8 @@
         btn.type = "button";
         btn.className = "channel-btn";
         btn.dataset.index = String(index);
-        btn.innerHTML = `<span class="play-icon" aria-hidden="true">▶</span><span>${channel.name}</span>`;
+        const unverified = channel.verified === false ? ' <span class="unverified">offline?</span>' : "";
+        btn.innerHTML = `<span class="play-icon" aria-hidden="true">▶</span><span>${channel.name}${unverified}</span>`;
         btn.addEventListener("click", () => playChannel(channel, index));
         btn.addEventListener("focus", () => {
           btn.scrollIntoView({ block: "nearest", inline: "nearest" });
@@ -120,10 +131,17 @@
     // show them as part of the channel name. Use #EXTGRP for folders instead.
     const lines = ["#EXTM3U", ""];
     list.forEach((channel) => {
-      const group = channel.group || "Other";
+      const group = getGroup(channel);
       lines.push(`#EXTINF:-1,${channel.name}`);
       lines.push(`#EXTGRP:${group}`);
       lines.push(channel.url);
+      if (channel.alt_urls) {
+        channel.alt_urls.forEach((altUrl) => {
+          lines.push(`#EXTINF:-1,${channel.name} (Alt)`);
+          lines.push(`#EXTGRP:${group}`);
+          lines.push(altUrl);
+        });
+      }
       lines.push("");
     });
     return lines.join("\n");

@@ -180,6 +180,11 @@ body {
   flex-shrink: 0;
 }
 
+.unverified {
+  color: #c97a6a;
+  font-size: 0.8em;
+}
+
 .status {
   margin: 0.75rem 0 0;
   font-size: 0.9rem;
