@@ -79,6 +79,7 @@
   }
 
   function getGroup(channel) {
+    if (channel.category === "Radio" || channel.group === "Radio") return "Radio";
     if (channel.group) return channel.group;
     const country = channel.country || "Other";
     const category = channel.category || "General";
@@ -96,6 +97,8 @@
     });
 
     const groups = Array.from(byGroup.keys()).sort((a, b) => {
+      if (a === "Radio") return 1;
+      if (b === "Radio") return -1;
       const [aCountry, aCat] = a.split(" | ");
       const [bCountry, bCat] = b.split(" | ");
       const countryCmp = aCountry.localeCompare(bCountry);
@@ -136,8 +139,8 @@
       lines.push(`#EXTGRP:${group}`);
       lines.push(channel.url);
       if (channel.alt_urls) {
-        channel.alt_urls.forEach((altUrl) => {
-          lines.push(`#EXTINF:-1,${channel.name} (Alt)`);
+        channel.alt_urls.forEach((altUrl, index) => {
+          lines.push(`#EXTINF:-1,${channel.name} (Alt ${index + 1})`);
           lines.push(`#EXTGRP:${group}`);
           lines.push(altUrl);
         });

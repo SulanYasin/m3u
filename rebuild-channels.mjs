@@ -1,8 +1,11 @@
 import fs from "fs";
+import path from "path";
 import https from "https";
 import http from "http";
 
 const ROOT = import.meta.dirname;
+
+const OUTPUT_FILES = ["channels.json", "MyArabicTV.m3u"];
 
 const COUNTRY_FROM_GROUP = {
   News: "Arab World",
@@ -16,8 +19,17 @@ const COUNTRY_FROM_GROUP = {
   Other: "Arab World",
 };
 
+function decodeDisplayName(name) {
+  return name
+    .replace(/\\u0026/gi, "&")
+    .replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+}
+
 function cleanName(name) {
-  return name.replace(/\s*\([^)]*\)\s*/g, " ").replace(/\s*\[[^\]]*\]\s*/g, " ").trim();
+  return decodeDisplayName(name)
+    .replace(/\s*\([^)]*\)\s*/g, " ")
+    .replace(/\s*\[[^\]]*\]\s*/g, " ")
+    .trim();
 }
 
 function getFormat(url) {
@@ -33,14 +45,15 @@ function getCountry(name, oldGroup) {
   const rules = [
     [/syria|souriya|halab|rojava|ronahi|welat|althania|ugarit|damascus|aleppo/, "Syria"],
     [/nablus|palestine|falastin|ajyal|rajeen|watar tv|al madina|al najah|radio albalad|dr pal/, "Palestine"],
-    [/saudi|ksa |sbc\b|ekhbariya|thaqafiya|rotana|makkah|madinah|quran|sunnah|asharq|panorama|iqraa|thikrayat|al saudiya|bab al hara|aflam|tarab/, "Saudi Arabia"],
     [/egypt|masr|cbc|nogoum|aghapy|coptic|al ghad|mix hollywood|watantv|watan tv|elsharq|9090/, "Egypt"],
     [/jordan|amman|roya |kaifa|alerth|altaghier/, "Jordan"],
     [/sharjah|ajman|dubai|abu dhabi|al yaum|al qamar|spacetoon|cnbc arabiya/, "UAE"],
+    [/\bmbc\b/, "UAE"],
+    [/bahrain/, "Bahrain"],
     [/qatar|al rayyan|alkass|al maaref|al jazeera|al araby/, "Qatar"],
     [/^ktv|kuwait/, "Kuwait"],
-    [/bahrain/, "Bahrain"],
     [/oman/, "Oman"],
+    [/saudi|ksa |sbc\b|ekhbariya|thaqafiya|rotana|makkah|madinah|sunnah|asharq|panorama|iqraa|thikrayat|al saudiya|bab al hara|aflam|tarab|holy quran|quran al kareem|quran radio/, "Saudi Arabia"],
     [/lebanon|lbc|mtv lebanon|future tv|tele liban|al manar|otv|noursat|nour /, "Lebanon"],
     [/iraq|kurd|rudaw|dijlah|al iraqia|al rasheed|karbala|imam hussein|samarra|zagros|ishtar|payam|mixkurdy/, "Iraq"],
     [/morocco|2m |al aoula|arryadia|medi 1|chada|\bmfm\b/, "Morocco"],
@@ -56,26 +69,41 @@ function getCountry(name, oldGroup) {
   for (const [re, country] of rules) {
     if (re.test(n)) return country;
   }
-  if (oldGroup && COUNTRY_FROM_GROUP[oldGroup]) return COUNTRY_FROM_GROUP[oldGroup];
-  if (oldGroup && !oldGroup.includes("|")) return oldGroup;
+  if (oldGroup) {
+    const legacy = oldGroup.includes("|") ? oldGroup.split("|")[0].trim() : oldGroup;
+    if (COUNTRY_FROM_GROUP[legacy]) return COUNTRY_FROM_GROUP[legacy];
+    if (!oldGroup.includes("|")) return oldGroup;
+  }
   return "Arab World";
+}
+
+function isChristianChannel(name, url = "") {
+  const n = name.toLowerCase();
+  const u = url.toLowerCase();
+  if (
+    /aghapy|coptic|noursat|nour al|nour el|nour mar|nour tv|sat-7|sat7|elsharq|emantv|tele lumiere|logos tv|koddas|koddass/i.test(
+      n
+    )
+  ) {
+    return true;
+  }
+  return /aghapy|icopts|nour\d+sat|noursat|sat7|elfaro4|elsharq_live|emantv|aghapykids/.test(u);
 }
 
 function getCategory(name, oldGroup) {
   const n = name.toLowerCase();
   const g = (oldGroup || "").toLowerCase();
-  if (/nablus/.test(n)) return "Religious";
-  if (/makkah tv|quran al kareem/.test(n)) return "Makkah Live";
-  if (/^holy quran radio$/.test(n)) return "Makkah Live";
+  if (/makkah tv/.test(n)) return "Makkah Live";
+  if (/quran al kareem|al quran al kareem/.test(n) && !/radio/.test(n)) return "Makkah Live";
   if (/sunnah al nabawiyah|madinah|medina/.test(n)) return "Madinah Live";
-  if (/radio|fm\b|9090/.test(n)) return "Radio";
+  if (/radio|\bfm\b|9090|onefm|mosaique|\bmfm\b|nogoumfmtv/.test(n)) return "Radio";
   if (/documentary|discovery|national geographic|nat geo|history hit|autentic|asharq disc|karbala doc|cgtn doc|jazeera documentary/.test(n)) return "Documentary";
   if (/sport|alkass|ksa sports|arryadia|sharjah sport|bahrain sport|oman sport|jordan sport/.test(n)) return "Sports";
   if (/spacetoon|kids|koogi|roya kids|atfal|zarok|majid tv/.test(n)) return "Kids";
   if (/drama|movie|aflam|cinema|bollywood|comedy|bab al hara|tarab|entertainment|rotana music|aghani/.test(n)) return "Entertainment";
   if (/education|syrian education/.test(n)) return "Education";
-  if (/news|mubasher|hadath|ekhbariya|alarabiya|jazeera|asharq news|cnbc|france 24|sky news|mayadeen|alalam|snews/.test(n)) return "News";
-  if (/quran|sunnah|peace tv|iqraa|resalah|imam hussein|religious|nour |noursat|charity|thikrayat/.test(n)) return "Religious";
+  if (/news|mubasher|hadath|ekhbariya|al arabiya|alarabiya|jazeera|asharq news|cnbc|france 24|sky news|mayadeen|alalam|snews/.test(n)) return "News";
+  if (/quran|sunnah|peace tv|iqraa|resalah|imam hussein|religious|nour |noursat|thikrayat/.test(n)) return "Religious";
   if (/mbc/.test(n)) return "Entertainment";
   if (g === "news") return "News";
   if (g === "documentary") return "Documentary";
@@ -84,6 +112,17 @@ function getCategory(name, oldGroup) {
   if (g === "mbc") return "Entertainment";
   if (/tv$|channel|satellite|national|souriya|syria tv|rojava|ronahi|welat|althania|halab|ugarit|syria one/.test(n)) return "National";
   return "General";
+}
+
+function applyGroupFields(item) {
+  if (item.category === "Radio") {
+    item.country = "Radio";
+    item.category = "Radio";
+    item.group = "Radio";
+  } else {
+    item.group = `${item.country} | ${item.category}`;
+  }
+  return item;
 }
 
 function nameKey(name) {
@@ -112,30 +151,91 @@ function parseM3u(text) {
   return out;
 }
 
-function checkUrl(url) {
+function probeUrl(url, method) {
   return new Promise((resolve) => {
     const lib = url.startsWith("https") ? https : http;
-    const req = lib.request(url, { method: "HEAD", timeout: 10000, headers: { "User-Agent": "Mozilla/5.0" } }, (res) => {
-      res.resume();
-      resolve(res.statusCode >= 200 && res.statusCode < 400);
-    });
-    req.on("error", () => {
-      const req2 = lib.request(url, { method: "GET", timeout: 10000, headers: { "User-Agent": "Mozilla/5.0" } }, (res) => {
-        res.destroy();
+    const req = lib.request(
+      url,
+      { method, timeout: 10000, headers: { "User-Agent": "Mozilla/5.0" } },
+      (res) => {
+        if (method === "GET") res.destroy();
+        else res.resume();
         resolve(res.statusCode >= 200 && res.statusCode < 400);
-      });
-      req2.on("error", () => resolve(false));
-      req2.on("timeout", () => {
-        req2.destroy();
-        resolve(false);
-      });
-    });
+      }
+    );
+    req.on("error", () => resolve(false));
     req.on("timeout", () => {
       req.destroy();
       resolve(false);
     });
     req.end();
   });
+}
+
+async function checkUrl(url) {
+  if (await probeUrl(url, "HEAD")) return true;
+  return probeUrl(url, "GET");
+}
+
+function getRepoRoot() {
+  if (fs.existsSync(path.join(ROOT, "m3u", "channels.json"))) return ROOT;
+  if (fs.existsSync(path.join(ROOT, "..", "m3u", "channels.json"))) {
+    return path.resolve(ROOT, "..");
+  }
+  return ROOT;
+}
+
+function syncOutputs(repoRoot, jsonContent, m3uContent) {
+  const targets = [path.join(repoRoot, "m3u"), path.join(repoRoot, "m3u", "m3u")];
+  for (const dir of targets) {
+    if (!fs.existsSync(dir)) continue;
+    fs.writeFileSync(path.join(dir, "channels.json"), jsonContent);
+    fs.writeFileSync(path.join(dir, "MyArabicTV.m3u"), m3uContent);
+  }
+}
+
+const SHIA_NAME_PATTERNS = [
+  /marjaeyat/i,
+  /imam hussein/i,
+  /beitolabbas/i,
+  /al-jawadain/i,
+  /al-aimma/i,
+  /al-sahat/i,
+  /alabbassia/i,
+  /alghadeer/i,
+  /^aliman tv$/i,
+  /alistiqama/i,
+  /tanasuh/i,
+  /charity\s*tv/i,
+  /^alawla tv$/i,
+  /karbala documentary/i,
+  /samarra tv/i,
+  /^al manar$/i,
+  /al masirah/i,
+];
+
+const SHIA_URL_PARTS = [
+  "marjaeyattv.com",
+  "alaimma.tv",
+  "aljawadain.org",
+  "assahat",
+  "alabbassia.com",
+  "beitolabbas.tv",
+  "tanasuh",
+  "imamhossaintv.com",
+  "al-zahratv.com",
+  "alawla.tv",
+  "ktvlive.online/stream/hls/ch3",
+  "samarra",
+  "652930de05533.streamlock.net/live/ngrp:livestream_all",
+  "185.105.4.236:1935/live/ngrp:livestream_all",
+  "edge.fastpublish.me/live",
+  "cdnbridge.tv/Almasirah",
+];
+
+function isShiaChannel(name, url) {
+  if (SHIA_NAME_PATTERNS.some((pattern) => pattern.test(name))) return true;
+  return SHIA_URL_PARTS.some((part) => url.includes(part));
 }
 
 async function fetchText(url) {
@@ -170,31 +270,31 @@ const byUrl = new Map();
 
 for (const ch of existing) {
   if (!ch.url || !ch.name) continue;
+  if (isShiaChannel(ch.name, ch.url)) continue;
+  if (isChristianChannel(ch.name, ch.url)) continue;
   const name = cleanName(ch.name);
   const country = getCountry(name, ch.group);
   const category = getCategory(name, ch.group);
-  byUrl.set(ch.url, {
+  byUrl.set(ch.url, applyGroupFields({
     name,
     url: ch.url,
     country,
     category,
     format: ch.format || getFormat(ch.url),
-    group: `${country} | ${category}`,
     verified: ch.verified !== false,
-  });
+  }));
 }
 
 for (const e of extras) {
   if (!byUrl.has(e.url)) {
-    byUrl.set(e.url, {
+    byUrl.set(e.url, applyGroupFields({
       name: e.name,
       url: e.url,
       country: e.country,
       category: e.category,
       format: getFormat(e.url),
-      group: `${e.country} | ${e.category}`,
       verified: e.verified !== false,
-    });
+    }));
   }
 }
 
@@ -222,20 +322,22 @@ for (const entries of byName.values()) {
   entries.sort((a, b) => score(b) - score(a));
   const primary = entries[0];
   const alt_urls = [...new Set(entries.slice(1).map((e) => e.url).filter((u) => u !== primary.url))];
-  const item = {
+  const item = applyGroupFields({
     name: primary.name.replace(/\s*\((alt|cdn|ottera|mangomolo|globecast|direct|kwikmotion)\)\s*/i, ""),
     url: primary.url,
     country: primary.country,
     category: primary.category,
     format: primary.format,
-    group: primary.group,
-  };
+  });
   if (alt_urls.length) item.alt_urls = alt_urls;
   if (primary.verified === false || entries.some((e) => e.verified === false)) item.verified = false;
   final.push(item);
 }
 
 final.sort((a, b) => {
+  if (a.group === "Radio" && b.group !== "Radio") return 1;
+  if (b.group === "Radio" && a.group !== "Radio") return -1;
+  if (a.group === "Radio") return a.name.localeCompare(b.name);
   const c = a.country.localeCompare(b.country);
   if (c) return c;
   const g = a.category.localeCompare(b.category);
@@ -256,7 +358,8 @@ for (const ch of toVerify) {
   }
 }
 
-fs.writeFileSync(`${ROOT}/channels.json`, JSON.stringify(final, null, 2) + "\n");
+const jsonContent = JSON.stringify(final, null, 2) + "\n";
+const repoRoot = getRepoRoot();
 
 const m3u = ["#EXTM3U", ""];
 for (const ch of final) {
@@ -264,15 +367,20 @@ for (const ch of final) {
   m3u.push(`#EXTGRP:${ch.group}`);
   m3u.push(ch.url);
   if (ch.alt_urls) {
-    for (const alt of ch.alt_urls) {
-      m3u.push(`#EXTINF:-1,${ch.name} (Alt)`);
+    ch.alt_urls.forEach((alt, index) => {
+      m3u.push(`#EXTINF:-1,${ch.name} (Alt ${index + 1})`);
       m3u.push(`#EXTGRP:${ch.group}`);
       m3u.push(alt);
-    }
+    });
   }
   m3u.push("");
 }
-fs.writeFileSync(`${ROOT}/MyArabicTV.m3u`, m3u.join("\n"));
+const m3uContent = m3u.join("\n");
+
+fs.writeFileSync(path.join(repoRoot, "channels.json"), jsonContent);
+fs.writeFileSync(path.join(repoRoot, "MyArabicTV.m3u"), m3uContent);
+syncOutputs(repoRoot, jsonContent, m3uContent);
+console.log(`Synced outputs to m3u/ mirror paths under ${repoRoot}`);
 
 const syria = final.filter((c) => c.country === "Syria");
 const makkah = final.filter((c) => c.category === "Makkah Live" || c.category === "Madinah Live");
