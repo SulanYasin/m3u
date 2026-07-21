@@ -316,6 +316,15 @@ const extras = [
   { name: "Alhiwar TV", url: "https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8", country: "International", category: "News" },
   { name: "Asil TV", url: "https://live.asil.tv/asiltv/index.m3u8", country: "Arab World", category: "Entertainment" },
   { name: "Hala London", url: "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8", country: "International", category: "Entertainment" },
+  // Sunnah / prayer / Quran (grade A–B, Jul 2026)
+  { name: "Al Quran Al Kareem TV", url: "http://m.live.net.sa:1935/live/quran/playlist.m3u8", country: "Saudi Arabia", category: "Makkah Live" },
+  { name: "Al Sunnah Al Nabawiyah TV", url: "http://m.live.net.sa:1935/live/sunnah/playlist.m3u8", country: "Saudi Arabia", category: "Madinah Live" },
+  { name: "Sharjah Quran TV", url: "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8", country: "UAE", category: "Religious" },
+  { name: "Sharjah Quran TV (Alt)", url: "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil//sharjahtvquranpublish/shqurantv_source/chunks.m3u8", country: "UAE", category: "Religious" },
+  { name: "Azan TV", url: "https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8", country: "International", category: "Religious" },
+  { name: "Islam Channel Urdu", url: "https://live-islamtv-urdu.simplestreamcdn.com/live13/islamtv_urdu/bitrate1.isml/live.m3u8", country: "International", category: "Religious" },
+  { name: "Al Madina", url: "https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/tracks-a1/index.fmp4.m3u8", country: "Palestine", category: "Religious" },
+  { name: "TV Muslim Thailand", url: "https://vdo.plathong.net/tvmuslim/tvmuslim/playlist.m3u8", country: "International", category: "Religious" },
 ];
 
 const existing = JSON.parse(fs.readFileSync(`${ROOT}/channels.json`, "utf8"));

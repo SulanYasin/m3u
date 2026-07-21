@@ -8,14 +8,6 @@
     "group": "Algeria"
   },
   {
-    "name": "Elwatania TV",
-    "url": "https://livesstream.work.gd:5443/WebRTCApp/streams/stream.m3u8",
-    "country": "Algeria",
-    "category": "National",
-    "format": "HLS",
-    "group": "Algeria"
-  },
-  {
     "name": "TV2 Algeria",
     "url": "http://185.9.2.18/chid_347/index.m3u8",
     "country": "Algeria",
@@ -251,7 +243,7 @@
     "name": "Asil TV",
     "url": "https://live.asil.tv/asiltv/index.m3u8",
     "country": "Arab World",
-    "category": "Entertainment",
+    "category": "National",
     "format": "HLS",
     "group": "Arab World"
   },
@@ -659,7 +651,7 @@
     "name": "Mekameleen TV",
     "url": "https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/playlist.m3u8",
     "country": "Egypt",
-    "category": "News",
+    "category": "National",
     "format": "HLS",
     "group": "Egypt"
   },
@@ -699,7 +691,7 @@
     "name": "Alhiwar TV",
     "url": "https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8",
     "country": "International",
-    "category": "News",
+    "category": "National",
     "format": "HLS",
     "group": "International"
   },
@@ -707,7 +699,7 @@
     "name": "Alhurra",
     "url": "https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900/MBN_Alhurra_Worldsafe_HLS/master.m3u8",
     "country": "International",
-    "category": "News",
+    "category": "General",
     "format": "HLS",
     "group": "International"
   },
@@ -716,6 +708,14 @@
     "url": "https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8",
     "country": "International",
     "category": "Documentary",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Azan TV",
+    "url": "https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8",
+    "country": "International",
+    "category": "Religious",
     "format": "HLS",
     "group": "International"
   },
@@ -763,7 +763,7 @@
     "name": "Hala London",
     "url": "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8",
     "country": "International",
-    "category": "Entertainment",
+    "category": "General",
     "format": "HLS",
     "group": "International"
   },
@@ -772,6 +772,14 @@
     "url": "https://timeline-samsung-uk.amagi.tv/playlist.m3u8",
     "country": "International",
     "category": "Documentary",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Islam Channel Urdu",
+    "url": "https://live-islamtv-urdu.simplestreamcdn.com/live13/islamtv_urdu/bitrate1.isml/live.m3u8",
+    "country": "International",
+    "category": "Religious",
     "format": "HLS",
     "group": "International"
   },
@@ -789,6 +797,14 @@
     "url": "https://live-fi.tvkaista.net/national-geographic/live.m3u8?hd=true",
     "country": "International",
     "category": "Documentary",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "TV Muslim Thailand",
+    "url": "https://vdo.plathong.net/tvmuslim/tvmuslim/playlist.m3u8",
+    "country": "International",
+    "category": "Religious",
     "format": "HLS",
     "group": "International"
   },
@@ -860,7 +876,7 @@
     "name": "Alhurra Iraq",
     "url": "https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038899/MBN_Iraq_Worldsafe_HLS/master.m3u8",
     "country": "Iraq",
-    "category": "News",
+    "category": "General",
     "format": "HLS",
     "group": "Iraq"
   },
@@ -868,7 +884,7 @@
     "name": "AVA Family",
     "url": "https://familyhls.avatv.live/hls/stream.m3u8",
     "country": "Iraq",
-    "category": "Entertainment",
+    "category": "General",
     "format": "HLS",
     "group": "Iraq"
   },
@@ -1124,7 +1140,7 @@
     "name": "Al Khalij",
     "url": "https://mn-nl.mncdn.com/khalij/khalij/playlist.m3u8",
     "country": "Kuwait",
-    "category": "National",
+    "category": "General",
     "format": "HLS",
     "group": "Kuwait"
   },
@@ -1212,7 +1228,7 @@
     "name": "Assirat TV",
     "url": "https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8",
     "country": "Lebanon",
-    "category": "Religious",
+    "category": "National",
     "format": "HLS",
     "group": "Lebanon",
     "alt_urls": [
@@ -1465,7 +1481,10 @@
     "country": "Palestine",
     "category": "General",
     "format": "HLS",
-    "group": "Palestine"
+    "group": "Palestine",
+    "alt_urls": [
+      "https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/tracks-a1/index.fmp4.m3u8"
+    ]
   },
   {
     "name": "Al Najah News",
@@ -1511,7 +1530,7 @@
     "name": "Musawa",
     "url": "https://pbc.furrera.ps/musawahd/index.m3u8",
     "country": "Palestine",
-    "category": "National",
+    "category": "General",
     "format": "HLS",
     "group": "Palestine"
   },
@@ -1527,7 +1546,7 @@
     "name": "Palestine Edu",
     "url": "https://pbc.furrera.ps/PalestineEDU/index.m3u8",
     "country": "Palestine",
-    "category": "Education",
+    "category": "General",
     "format": "HLS",
     "group": "Palestine"
   },
@@ -1830,7 +1849,8 @@
     "format": "HLS",
     "group": "Saudi Arabia",
     "alt_urls": [
-      "https://edge.taghtia.com/sa/7.m3u8"
+      "https://edge.taghtia.com/sa/7.m3u8",
+      "http://m.live.net.sa:1935/live/quran/playlist.m3u8"
     ]
   },
   {
@@ -1863,7 +1883,10 @@
     "country": "Saudi Arabia",
     "category": "Madinah Live",
     "format": "HLS",
-    "group": "Saudi Arabia"
+    "group": "Saudi Arabia",
+    "alt_urls": [
+      "http://m.live.net.sa:1935/live/sunnah/playlist.m3u8"
+    ]
   },
   {
     "name": "Alquran",
@@ -2202,6 +2225,14 @@
     "group": "Tunisia"
   },
   {
+    "name": "Elwatania TV",
+    "url": "https://livesstream.work.gd:5443/WebRTCApp/streams/stream.m3u8",
+    "country": "Tunisia",
+    "category": "National",
+    "format": "HLS",
+    "group": "Tunisia"
+  },
+  {
     "name": "Ajman TV",
     "url": "https://cdn1.logichost.in/ajmantv/live/playlist.m3u8",
     "country": "UAE",
@@ -2332,6 +2363,17 @@
     "category": "General",
     "format": "HLS",
     "group": "UAE"
+  },
+  {
+    "name": "Sharjah Quran TV",
+    "url": "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8",
+    "country": "UAE",
+    "category": "Religious",
+    "format": "HLS",
+    "group": "UAE",
+    "alt_urls": [
+      "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil//sharjahtvquranpublish/shqurantv_source/chunks.m3u8"
+    ]
   },
   {
     "name": "Sharjah TV",
