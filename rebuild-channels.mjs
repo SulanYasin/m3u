@@ -81,6 +81,14 @@ function getCountry(name, oldGroup) {
   return "Arab World";
 }
 
+function isExcludedChannel(name, category, group) {
+  const n = cleanName(name).toLowerCase();
+  if (/^rojava tv$|^ronahi tv$|^rohani tv$/i.test(n)) return true;
+  if (category === "Radio" || group === "Radio") return true;
+  if (/\bradio\b|\bfm\b|9090/i.test(n) && !/documentary|tv$/i.test(n)) return true;
+  return false;
+}
+
 function isChristianChannel(name, url = "") {
   const n = name.toLowerCase();
   const u = url.toLowerCase();
@@ -105,6 +113,7 @@ function getCategory(name, oldGroup) {
   if (/sport|alkass|ksa sports|arryadia|sharjah sport|bahrain sport|oman sport|jordan sport/.test(n)) return "Sports";
   if (/spacetoon|kids|koogi|roya kids|atfal|zarok|majid tv/.test(n)) return "Kids";
   if (/drama|movie|aflam|cinema|bollywood|comedy|bab al hara|tarab|entertainment|rotana music|aghani/.test(n)) return "Entertainment";
+  if (/movies|pluto tv|filmrise|charge!|classic movies|24 hour free|mytime movie|grjngo|70s cinema|80s rewind|90s throwback|classic movie westerns/.test(n)) return "Movies";
   if (/education|syrian education/.test(n)) return "Education";
   if (/news|mubasher|hadath|ekhbariya|al arabiya|alarabiya|jazeera|asharq news|cnbc|france 24|sky news|mayadeen|alalam|snews/.test(n)) return "News";
   if (/quran|sunnah|peace tv|iqraa|resalah|imam hussein|religious|nour |noursat|thikrayat/.test(n)) return "Religious";
@@ -251,10 +260,7 @@ async function fetchText(url) {
 
 const extras = [
   { name: "Syria One", url: "https://live.syriaone.tv/live/syriaone.m3u8", country: "Syria", category: "National" },
-  { name: "Damascus Radio", url: "https://radiodamascus.ortas.live/RDimshq/RDimshqLive/playlist.m3u8", country: "Syria", category: "Radio" },
-  { name: "Halab Today TV (Alt)", url: "https://halabtoday-live.lg.mncdn.com/halabtoday/livestream/playlist.m3u8", country: "Syria", category: "National" },
   { name: "Syria TV (Kwikmotion)", url: "https://live.kwikmotion.com/syriatvlive/syriatv.smil/playlist_dvr.m3u8", country: "Syria", category: "National" },
-  { name: "Syria TV (Ottera)", url: "https://stream.ads.ottera.tv/playlist.m3u8?network_id=6017", country: "Syria", category: "National" },
   { name: "Syria Drama", url: "http://82.137.248.21:1935/Drama/DramaLive3/playlist.m3u8", country: "Syria", category: "Entertainment", verified: false },
   { name: "Syria Satellite Channel", url: "http://82.137.248.16:1935/Sat/SatLive3/playlist.m3u8", country: "Syria", category: "National", verified: false },
   { name: "Syrian News Channel", url: "http://82.137.248.16:1935/Snews/SnewsLive3/playlist.m3u8", country: "Syria", category: "News", verified: false },
@@ -263,15 +269,9 @@ const extras = [
   { name: "Makkah TV", url: "https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8", country: "Saudi Arabia", category: "Makkah Live", verified: false },
   { name: "Al Jazeera Documentary", url: "https://live-hls-web-ajd.getaj.net/AJD/index.m3u8", country: "Qatar", category: "Documentary" },
   { name: "National Geographic Abu Dhabi", url: "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8", country: "UAE", category: "Documentary", verified: false },
-  { name: "National Geographic Abu Dhabi (Mangomolo)", url: "https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8", country: "UAE", category: "Documentary", verified: false },
   { name: "Nat Geo Wild Arabic", url: "https://saran-live.ercdn.net/natgeowild/index.m3u8", country: "International", category: "Documentary", verified: false },
   { name: "WildEarth", url: "https://wildearth-plex.amagi.tv/playlist.m3u8", country: "International", category: "Documentary" },
-  { name: "Al Quran Al Kareem TV (Globecast)", url: "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8", country: "Saudi Arabia", category: "Makkah Live" },
-  { name: "Al Quran Al Kareem TV (Taghtia)", url: "https://edge.taghtia.com/sa/7.m3u8", country: "Saudi Arabia", category: "Makkah Live" },
-  { name: "Al Sunnah Al Nabawiyah TV (Globecast)", url: "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8", country: "Saudi Arabia", category: "Madinah Live" },
   { name: "Asharq News (Direct)", url: "https://live-news.asharq.com/asharq.m3u8", country: "Saudi Arabia", category: "News" },
-  { name: "Asharq News (DASH)", url: "https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/manifest.mpd", country: "Saudi Arabia", category: "News" },
-  { name: "Quran Radio (Taghtia)", url: "https://edge.taghtia.com/sa/13.m3u8", country: "Radio", category: "Radio" },
   { name: "BBC Arabic", url: "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8", country: "International", category: "News" },
   { name: "DW Arabic", url: "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8", country: "International", category: "News" },
   { name: "CGTN Arabic", url: "https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8", country: "International", category: "News" },
@@ -282,7 +282,6 @@ const extras = [
   { name: "Qatar Television", url: "https://qatartv.akamaized.net/hls/live/20000609/qtv1/master.m3u8", country: "Qatar", category: "National" },
   { name: "Qatar TV The Holy Quran", url: "https://qatartv.akamaized.net/hls/live/20000612/qtvquran/master.m3u8", country: "Qatar", category: "Religious" },
   { name: "QBC", url: "https://live.kwikmotion.com/qbusinesslive/qbusiness.smil/playlist.m3u8", country: "Qatar", category: "News" },
-  { name: "QBC (Alkass)", url: "https://googlecdn1.alkassdigital.net/livestream/qbc4/main.m3u8", country: "Qatar", category: "News" },
   { name: "Kolalnas TV", url: "https://htvint.mada.ps/kolalnas/index.m3u8", country: "Palestine", category: "National" },
   { name: "Raya 1", url: "https://htvmada.mada.ps:4443/raya/index.m3u8", country: "Palestine", category: "National" },
   { name: "Al Sharqiya", url: "http://185.9.2.18/chid_144/index.m3u8", country: "Iraq", category: "National" },
@@ -290,9 +289,6 @@ const extras = [
   { name: "Al Maghribia", url: "http://185.9.2.18/chid_205/index.m3u8", country: "Morocco", category: "National" },
   { name: "TV2 Algeria", url: "http://185.9.2.18/chid_347/index.m3u8", country: "Algeria", category: "National" },
   { name: "El-Heddaf TV", url: "https://live.elheddaftv.com:8081/elheddaftv/index.m3u8", country: "Algeria", category: "Sports" },
-  { name: "Radio Fann Jordan", url: "http://45.63.116.205/hls2/stream1.m3u8", country: "Radio", category: "Radio" },
-  { name: "Radio Yaqeen Jordan", url: "http://45.63.116.205/hls4/stream1.m3u8", country: "Radio", category: "Radio" },
-  { name: "Rotana Radio Jordan", url: "http://45.63.116.205/hls/stream1.m3u8", country: "Radio", category: "Radio" },
   { name: "Rotana Tarab Jordan", url: "http://45.63.116.205/hls3/stream1.m3u8", country: "Jordan", category: "Entertainment" },
   // Verified missing from iptv-org MENA + yazki/ara sources (Jul 2026)
   { name: "Elwatania TV", url: "https://livesstream.work.gd:5443/WebRTCApp/streams/stream.m3u8", country: "Algeria", category: "National" },
@@ -303,11 +299,9 @@ const extras = [
   { name: "Al-Naeem TV", url: "http://37.238.136.61/hls/stream.m3u8", country: "Iraq", category: "National" },
   { name: "AVA Family", url: "https://familyhls.avatv.live/hls/stream.m3u8", country: "Iraq", category: "Entertainment" },
   { name: "Hala TV", url: "https://gstream4.panet.co.il/edge/halaTV/playlist.m3u8", country: "Palestine", category: "National" },
-  { name: "Melody FM Jordan", url: "https://cdn3.wowza.com/1/OVRrOWxXUEswS2Yv/eGVxSWZy/hls/live/playlist.m3u8", country: "Radio", category: "Radio" },
   { name: "Ch4Teen Documentary", url: "https://ch14.tv/live/ch4teendoc/playlist.m3u8", country: "Kuwait", category: "Documentary" },
   { name: "Al Khalij", url: "https://mn-nl.mncdn.com/khalij/khalij/playlist.m3u8", country: "Kuwait", category: "National" },
   { name: "Assirat TV", url: "https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8", country: "Lebanon", category: "Religious" },
-  { name: "Assirat TV (CDN)", url: "https://svs.itworkscdn.net/assiratvlive/assirat/playlist.m3u8", country: "Lebanon", category: "Religious" },
   { name: "Tanasuh TV", url: "https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8", country: "Libya", category: "National" },
   { name: "Musawa", url: "https://pbc.furrera.ps/musawahd/index.m3u8", country: "Palestine", category: "National" },
   { name: "Palestine Edu", url: "https://pbc.furrera.ps/PalestineEDU/index.m3u8", country: "Palestine", category: "Education" },
@@ -316,15 +310,33 @@ const extras = [
   { name: "Alhiwar TV", url: "https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8", country: "International", category: "News" },
   { name: "Asil TV", url: "https://live.asil.tv/asiltv/index.m3u8", country: "Arab World", category: "Entertainment" },
   { name: "Hala London", url: "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8", country: "International", category: "Entertainment" },
-  // Sunnah / prayer / Quran (grade A–B, Jul 2026)
-  { name: "Al Quran Al Kareem TV", url: "http://m.live.net.sa:1935/live/quran/playlist.m3u8", country: "Saudi Arabia", category: "Makkah Live" },
-  { name: "Al Sunnah Al Nabawiyah TV", url: "http://m.live.net.sa:1935/live/sunnah/playlist.m3u8", country: "Saudi Arabia", category: "Madinah Live" },
+  // Sunnah / prayer / Quran
   { name: "Sharjah Quran TV", url: "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8", country: "UAE", category: "Religious" },
-  { name: "Sharjah Quran TV (Alt)", url: "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil//sharjahtvquranpublish/shqurantv_source/chunks.m3u8", country: "UAE", category: "Religious" },
   { name: "Azan TV", url: "https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8", country: "International", category: "Religious" },
   { name: "Islam Channel Urdu", url: "https://live-islamtv-urdu.simplestreamcdn.com/live13/islamtv_urdu/bitrate1.isml/live.m3u8", country: "International", category: "Religious" },
-  { name: "Al Madina", url: "https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/tracks-a1/index.fmp4.m3u8", country: "Palestine", category: "Religious" },
   { name: "TV Muslim Thailand", url: "https://vdo.plathong.net/tvmuslim/tvmuslim/playlist.m3u8", country: "International", category: "Religious" },
+  // Legal 24/7 movie FAST channels (iptv-org)
+  { name: "MBC 2", url: "http://37.122.156.107:4000/play/a07g/index.m3u8", country: "UAE", category: "Movies" },
+  { name: "MBC Action", url: "http://37.122.156.107:4000/play/a07h/index.m3u8", country: "UAE", category: "Movies" },
+  { name: "MBC Max", url: "http://37.122.156.107:4000/play/a07i/index.m3u8", country: "UAE", category: "Movies" },
+  { name: "Dubai One", url: "https://dminnvll.cdn.mangomolo.com/dubaione/smil:dubaione.stream.smil/playlist.m3u8", country: "UAE", category: "Entertainment" },
+  { name: "Rotana Aflam", url: "https://rotana.hibridcdn.net/rotananet/aflam_net-7Y83PP5adWixDF93/playlist.m3u8", country: "Saudi Arabia", category: "Movies" },
+  { name: "Pluto TV Action", url: "https://jmp2.uk/plu-561d7d484dc7c8770484914a.m3u8", country: "International", category: "Movies" },
+  { name: "Pluto TV Movies", url: "https://jmp2.uk/plu-5c5c3b948002db3c3e0b262e.m3u8", country: "International", category: "Movies" },
+  { name: "Pluto TV Horror", url: "https://jmp2.uk/plu-569546031a619b8f07ce6e25.m3u8", country: "International", category: "Movies" },
+  { name: "Pluto TV Thrillers", url: "https://jmp2.uk/plu-5b4e69e08291147bd04a9fd7.m3u8", country: "International", category: "Movies" },
+  { name: "Pluto TV Sci-Fi", url: "https://jmp2.uk/plu-5b4fc274694c027be6ed3eea.m3u8", country: "International", category: "Movies" },
+  { name: "Pluto TV Drama", url: "https://jmp2.uk/plu-5b4e92e4694c027be6ecece1.m3u8", country: "International", category: "Movies" },
+  { name: "Classic Movies Channel", url: "https://jmp2.uk/plu-561c5b0dada51f8004c4d855.m3u8", country: "International", category: "Movies" },
+  { name: "24 Hour Free Movies", url: "https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8", country: "International", category: "Movies" },
+  { name: "Charge!", url: "https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8", country: "International", category: "Movies" },
+  { name: "MyTime Movie Network", url: "https://appletree-mytimeuk-rakuten.amagi.tv/playlist.m3u8", country: "International", category: "Movies" },
+  { name: "FilmRise Westerns", url: "https://dz05z8iljgvbe.cloudfront.net/master.m3u8", country: "International", category: "Movies" },
+  { name: "Grjngo Western Movies", url: "https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8", country: "International", category: "Movies" },
+  { name: "70s Cinema", url: "https://jmp2.uk/plu-5f4d878d3d19b30007d2e782.m3u8", country: "International", category: "Movies" },
+  { name: "80s Rewind", url: "https://jmp2.uk/plu-5ca525b650be2571e3943c63.m3u8", country: "International", category: "Movies" },
+  { name: "90s Throwback", url: "https://jmp2.uk/plu-5f4d86f519358a00072b978e.m3u8", country: "International", category: "Movies" },
+  { name: "Classic Movie Westerns", url: "https://jmp2.uk/plu-61f33318210549000806a530.m3u8", country: "International", category: "Movies" },
 ];
 
 const existing = JSON.parse(fs.readFileSync(`${ROOT}/channels.json`, "utf8"));
@@ -337,6 +349,8 @@ for (const ch of existing) {
   const name = cleanName(ch.name);
   const country = getCountry(name, ch.group);
   const category = getCategory(name, ch.group);
+  const group = ch.group || country;
+  if (isExcludedChannel(name, category, group)) continue;
   byUrl.set(ch.url, applyGroupFields({
     name,
     url: ch.url,
@@ -348,6 +362,7 @@ for (const ch of existing) {
 }
 
 for (const e of extras) {
+  if (isExcludedChannel(e.name, e.category, e.country)) continue;
   if (!byUrl.has(e.url)) {
     byUrl.set(e.url, applyGroupFields({
       name: e.name,
@@ -386,7 +401,6 @@ const final = [];
 for (const entries of byName.values()) {
   entries.sort((a, b) => score(b) - score(a));
   const primary = entries[0];
-  const alt_urls = [...new Set(entries.slice(1).map((e) => e.url).filter((u) => u !== primary.url))];
   const item = applyGroupFields({
     name: primary.name.replace(/\s*\((alt|cdn|ottera|mangomolo|globecast|direct|kwikmotion|taghtia|dash|alkass)\)\s*/i, ""),
     url: primary.url,
@@ -394,14 +408,11 @@ for (const entries of byName.values()) {
     category: primary.category,
     format: primary.format,
   });
-  if (alt_urls.length) item.alt_urls = alt_urls;
   if (primary.verified === false || entries.some((e) => e.verified === false)) item.verified = false;
-  final.push(item);
+  if (!isExcludedChannel(item.name, item.category, item.group)) final.push(item);
 }
 
 final.sort((a, b) => {
-  if (a.group === "Radio" && b.group !== "Radio") return 1;
-  if (b.group === "Radio" && a.group !== "Radio") return -1;
   const c = a.group.localeCompare(b.group);
   if (c) return c;
   return a.name.localeCompare(b.name);
@@ -428,13 +439,6 @@ for (const ch of final) {
   m3u.push(`#EXTINF:-1,${ch.name}`);
   m3u.push(`#EXTGRP:${ch.group}`);
   m3u.push(ch.url);
-  if (ch.alt_urls) {
-    ch.alt_urls.forEach((alt, index) => {
-      m3u.push(`#EXTINF:-1,${ch.name} (Alt ${index + 1})`);
-      m3u.push(`#EXTGRP:${ch.group}`);
-      m3u.push(alt);
-    });
-  }
   m3u.push("");
 }
 const m3uContent = m3u.join("\n");
@@ -459,12 +463,6 @@ docs.forEach((c) => console.log(`  ${c.name} (${c.country})${c.verified === fals
 const fmtCounts = {};
 for (const c of final) {
   fmtCounts[c.format] = (fmtCounts[c.format] || 0) + 1;
-  if (c.alt_urls) {
-    for (const u of c.alt_urls) {
-      const f = getFormat(u);
-      fmtCounts[`alt:${f}`] = (fmtCounts[`alt:${f}`] || 0) + 1;
-    }
-  }
 }
 console.log("--- Formats ---");
 Object.entries(fmtCounts).sort((a,b)=>b[1]-a[1]).forEach(([k,v]) => console.log(`  ${v} ${k}`));

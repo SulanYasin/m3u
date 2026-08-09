@@ -688,6 +688,38 @@
     "group": "France"
   },
   {
+    "name": "24 Hour Free Movies",
+    "url": "https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "70s Cinema",
+    "url": "https://jmp2.uk/plu-5f4d878d3d19b30007d2e782.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "80s Rewind",
+    "url": "https://jmp2.uk/plu-5ca525b650be2571e3943c63.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "90s Throwback",
+    "url": "https://jmp2.uk/plu-5f4d86f519358a00072b978e.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
     "name": "Alhiwar TV",
     "url": "https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8",
     "country": "International",
@@ -715,7 +747,7 @@
     "name": "Azan TV",
     "url": "https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8",
     "country": "International",
-    "category": "Religious",
+    "category": "National",
     "format": "HLS",
     "group": "International"
   },
@@ -744,6 +776,30 @@
     "group": "International"
   },
   {
+    "name": "Charge!",
+    "url": "https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Classic Movie Westerns",
+    "url": "https://jmp2.uk/plu-61f33318210549000806a530.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Classic Movies Channel",
+    "url": "https://jmp2.uk/plu-561c5b0dada51f8004c4d855.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
     "name": "Documentary+",
     "url": "https://d1kx9y4yhe8h6h.cloudfront.net/playlist.m3u8",
     "country": "International",
@@ -756,6 +812,22 @@
     "url": "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8",
     "country": "International",
     "category": "General",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "FilmRise Westerns",
+    "url": "https://dz05z8iljgvbe.cloudfront.net/master.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Grjngo Western Movies",
+    "url": "https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8",
+    "country": "International",
+    "category": "Movies",
     "format": "HLS",
     "group": "International"
   },
@@ -779,7 +851,15 @@
     "name": "Islam Channel Urdu",
     "url": "https://live-islamtv-urdu.simplestreamcdn.com/live13/islamtv_urdu/bitrate1.isml/live.m3u8",
     "country": "International",
-    "category": "Religious",
+    "category": "National",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "MyTime Movie Network",
+    "url": "https://appletree-mytimeuk-rakuten.amagi.tv/playlist.m3u8",
+    "country": "International",
+    "category": "Movies",
     "format": "HLS",
     "group": "International"
   },
@@ -801,10 +881,58 @@
     "group": "International"
   },
   {
+    "name": "Pluto TV Action",
+    "url": "https://jmp2.uk/plu-561d7d484dc7c8770484914a.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Pluto TV Drama",
+    "url": "https://jmp2.uk/plu-5b4e92e4694c027be6ecece1.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Pluto TV Horror",
+    "url": "https://jmp2.uk/plu-569546031a619b8f07ce6e25.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Pluto TV Movies",
+    "url": "https://jmp2.uk/plu-5c5c3b948002db3c3e0b262e.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Pluto TV Sci-Fi",
+    "url": "https://jmp2.uk/plu-5b4fc274694c027be6ed3eea.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
+    "name": "Pluto TV Thrillers",
+    "url": "https://jmp2.uk/plu-5b4e69e08291147bd04a9fd7.m3u8",
+    "country": "International",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "International"
+  },
+  {
     "name": "TV Muslim Thailand",
     "url": "https://vdo.plathong.net/tvmuslim/tvmuslim/playlist.m3u8",
     "country": "International",
-    "category": "Religious",
+    "category": "General",
     "format": "HLS",
     "group": "International"
   },
@@ -1230,10 +1358,7 @@
     "country": "Lebanon",
     "category": "National",
     "format": "HLS",
-    "group": "Lebanon",
-    "alt_urls": [
-      "https://svs.itworkscdn.net/assiratvlive/assirat/playlist.m3u8"
-    ]
+    "group": "Lebanon"
   },
   {
     "name": "Future TV",
@@ -1481,10 +1606,7 @@
     "country": "Palestine",
     "category": "General",
     "format": "HLS",
-    "group": "Palestine",
-    "alt_urls": [
-      "https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/tracks-a1/index.fmp4.m3u8"
-    ]
+    "group": "Palestine"
   },
   {
     "name": "Al Najah News",
@@ -1804,10 +1926,7 @@
     "country": "Qatar",
     "category": "General",
     "format": "HLS",
-    "group": "Qatar",
-    "alt_urls": [
-      "https://googlecdn1.alkassdigital.net/livestream/qbc4/main.m3u8"
-    ]
+    "group": "Qatar"
   },
   {
     "name": "Aflam",
@@ -1847,11 +1966,7 @@
     "country": "Saudi Arabia",
     "category": "Makkah Live",
     "format": "HLS",
-    "group": "Saudi Arabia",
-    "alt_urls": [
-      "https://edge.taghtia.com/sa/7.m3u8",
-      "http://m.live.net.sa:1935/live/quran/playlist.m3u8"
-    ]
+    "group": "Saudi Arabia"
   },
   {
     "name": "Al Saudiya",
@@ -1883,10 +1998,7 @@
     "country": "Saudi Arabia",
     "category": "Madinah Live",
     "format": "HLS",
-    "group": "Saudi Arabia",
-    "alt_urls": [
-      "http://m.live.net.sa:1935/live/sunnah/playlist.m3u8"
-    ]
+    "group": "Saudi Arabia"
   },
   {
     "name": "Alquran",
@@ -1918,11 +2030,7 @@
     "country": "Saudi Arabia",
     "category": "News",
     "format": "HLS",
-    "group": "Saudi Arabia",
-    "alt_urls": [
-      "https://live-news.asharq.com/asharq.m3u8",
-      "https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/manifest.mpd"
-    ]
+    "group": "Saudi Arabia"
   },
   {
     "name": "Bab Al Hara",
@@ -1985,6 +2093,14 @@
     "url": "https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8",
     "country": "Saudi Arabia",
     "category": "Makkah Live",
+    "format": "HLS",
+    "group": "Saudi Arabia"
+  },
+  {
+    "name": "Rotana Aflam",
+    "url": "https://rotana.hibridcdn.net/rotananet/aflam_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "country": "Saudi Arabia",
+    "category": "Movies",
     "format": "HLS",
     "group": "Saudi Arabia"
   },
@@ -2114,25 +2230,6 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria",
-    "alt_urls": [
-      "https://halabtoday-live.lg.mncdn.com/halabtoday/livestream/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Rojava TV",
-    "url": "https://hlspackager.akamaized.net/live/DB/ROJAVA_HD/HLS/ROJAVA_HD.m3u8",
-    "country": "Syria",
-    "category": "National",
-    "format": "HLS",
-    "group": "Syria"
-  },
-  {
-    "name": "Ronahi TV",
-    "url": "https://hlspackager.akamaized.net/live/DB/RONAHI_TV/HLS/RONAHI_TV.m3u8",
-    "country": "Syria",
-    "category": "National",
-    "format": "HLS",
     "group": "Syria"
   },
   {
@@ -2167,11 +2264,7 @@
     "country": "Syria",
     "category": "National",
     "format": "HLS",
-    "group": "Syria",
-    "alt_urls": [
-      "https://live.kwikmotion.com/syriatvlive/syriatv.smil/playlist_dvr.m3u8",
-      "https://stream.ads.ottera.tv/playlist.m3u8?network_id=6017"
-    ]
+    "group": "Syria"
   },
   {
     "name": "Syrian Education TV",
@@ -2265,6 +2358,14 @@
     "group": "UAE"
   },
   {
+    "name": "Dubai One",
+    "url": "https://dminnvll.cdn.mangomolo.com/dubaione/smil:dubaione.stream.smil/playlist.m3u8",
+    "country": "UAE",
+    "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
     "name": "Dubai TV International",
     "url": "http://185.9.2.18/chid_139/index.m3u8",
     "country": "UAE",
@@ -2281,6 +2382,14 @@
     "group": "UAE"
   },
   {
+    "name": "MBC 2",
+    "url": "http://37.122.156.107:4000/play/a07g/index.m3u8",
+    "country": "UAE",
+    "category": "Movies",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
     "name": "MBC 4",
     "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8",
     "country": "UAE",
@@ -2293,6 +2402,14 @@
     "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8",
     "country": "UAE",
     "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC Action",
+    "url": "http://37.122.156.107:4000/play/a07h/index.m3u8",
+    "country": "UAE",
+    "category": "Movies",
     "format": "HLS",
     "group": "UAE"
   },
@@ -2317,6 +2434,14 @@
     "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39cb5b90203691e/index.m3u8",
     "country": "UAE",
     "category": "Entertainment",
+    "format": "HLS",
+    "group": "UAE"
+  },
+  {
+    "name": "MBC Max",
+    "url": "http://37.122.156.107:4000/play/a07i/index.m3u8",
+    "country": "UAE",
+    "category": "Movies",
     "format": "HLS",
     "group": "UAE"
   },
@@ -2351,9 +2476,6 @@
     "category": "Documentary",
     "format": "HLS",
     "group": "UAE",
-    "alt_urls": [
-      "https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8"
-    ],
     "verified": false
   },
   {
@@ -2370,10 +2492,7 @@
     "country": "UAE",
     "category": "Religious",
     "format": "HLS",
-    "group": "UAE",
-    "alt_urls": [
-      "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil//sharjahtvquranpublish/shqurantv_source/chunks.m3u8"
-    ]
+    "group": "UAE"
   },
   {
     "name": "Sharjah TV",
@@ -2422,224 +2541,5 @@
     "category": "National",
     "format": "HLS",
     "group": "Yemen"
-  },
-  {
-    "name": "Al Riyadh Radio",
-    "url": "https://aloula-redirect.vercel.app/12/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Alkhuzama Radio",
-    "url": "https://aloula-redirect.vercel.app/18/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Asharq Radio",
-    "url": "https://svs.itworkscdn.net/asharqradiovlive/asharqradiov/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Damascus Radio",
-    "url": "https://radiodamascus.ortas.live/RDimshq/RDimshqLive/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "El Radio 9090 FM",
-    "url": "https://9090video.mobtada.com/hls/stream.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Holy Quran Radio",
-    "url": "https://aloula-redirect.vercel.app/13/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Holy Quran Radio Nablus",
-    "url": "http://streaming.zaytonatube.com:8080/holyquran/holyquran/video.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Jeddah Radio",
-    "url": "https://aloula-redirect.vercel.app/15/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "MBC FM",
-    "url": "https://dbbv9umqcd7cs.cloudfront.net/out/v1/db15b75c3cc0400c91961468d6a232ac/index.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Melody FM Jordan",
-    "url": "https://cdn3.wowza.com/1/OVRrOWxXUEswS2Yv/eGVxSWZy/hls/live/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "mfm",
-    "url": "https://hms.pfs.gdn/hms/v1/broadcast/hlmvmp2hfriode891/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Mosaique FM",
-    "url": "https://webcam.mosaiquefm.net/mosatv/_definst_/studio/playlist.m3u8?DVR",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Nidae AlIslam Radio",
-    "url": "https://aloula-redirect.vercel.app/14/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "NogoumFMTV",
-    "url": "https://nogoumtv.nrpstream.com/hls/stream.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "OneFM",
-    "url": "https://hms.pfs.gdn/v1/broadcast/onefm/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Panorama FM",
-    "url": "https://d6izdil55uftn.cloudfront.net/out/v1/0a06d1d6377c47edbd48721ed724bd08/index.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Pulse95 Radio",
-    "url": "https://svs.itworkscdn.net/pulse95live/pulse96/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Quran Radio",
-    "url": "https://live.kwikmotion.com/sbrksaquranradiolive/srpksaquranradio/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio",
-    "alt_urls": [
-      "https://edge.taghtia.com/sa/13.m3u8"
-    ]
-  },
-  {
-    "name": "Radio Albalad TV",
-    "url": "http://streaming.zaytonatube.com:8080/radioalbalad/radioalbalad/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Radio Fann Jordan",
-    "url": "http://45.63.116.205/hls2/stream1.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Radio Yaqeen Jordan",
-    "url": "http://45.63.116.205/hls4/stream1.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Rotana Radio Jordan",
-    "url": "http://45.63.116.205/hls/stream1.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Saudia Radio",
-    "url": "https://aloula-redirect.vercel.app/11/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Shabab FM",
-    "url": "https://streaming.zaytonatube.com:8081/ShababFM/shabab/index.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Sharjah Radio",
-    "url": "https://svs.itworkscdn.net/smcradiolive/smcradiolive/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Sharjah Radio Quran",
-    "url": "https://live.kwikmotion.com/smcquranlive/quranradiolive/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
-  },
-  {
-    "name": "Watar Radio",
-    "url": "https://svs.itworkscdn.net/smcwatarlive/smcwatar/playlist.m3u8",
-    "country": "Radio",
-    "category": "Radio",
-    "format": "HLS",
-    "group": "Radio"
   }
 ]

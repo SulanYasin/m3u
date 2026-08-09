@@ -139,13 +139,6 @@
       lines.push(`#EXTINF:-1,${channel.name}`);
       lines.push(`#EXTGRP:${group}`);
       lines.push(channel.url);
-      if (channel.alt_urls) {
-        channel.alt_urls.forEach((altUrl, index) => {
-          lines.push(`#EXTINF:-1,${channel.name} (Alt ${index + 1})`);
-          lines.push(`#EXTGRP:${group}`);
-          lines.push(altUrl);
-        });
-      }
       lines.push("");
     });
     return lines.join("\n");
