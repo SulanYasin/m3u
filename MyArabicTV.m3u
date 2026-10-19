@@ -184,10 +184,6 @@ https://shd-amg-fast.edgenextcdn.net/tx008/playlist.m3u8
 #EXTGRP:Arab World
 https://ffs.gulfsat.com/Marina-TV-HD/index.m3u8
 
-#EXTINF:-1,Medi1TV Afrique
-#EXTGRP:Arab World
-https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist.m3u8
-
 #EXTINF:-1,Mohammed Abdo
 #EXTGRP:Arab World
 https://d2ow8h651gs7dx.cloudfront.net/out/v1/371fb663da604e659a2fb99bf89d92d4/index.m3u8
@@ -308,6 +304,10 @@ https://flu.systemnet.tv/CBCDrama/index.m3u8
 #EXTGRP:Egypt
 https://flu.systemnet.tv/CBCSofra/index.m3u8
 
+#EXTINF:-1,Mazzika
+#EXTGRP:Egypt
+http://149.100.11.235:8080/Mazzika/index.m3u8
+
 #EXTINF:-1,MBC 1 Egypt
 #EXTGRP:Egypt
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1-na/eec141533c90dd34722c503a296dd0d8/index.m3u8
@@ -331,6 +331,10 @@ https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/playlist.m3u8
 #EXTINF:-1,Mix Hollywood
 #EXTGRP:Egypt
 https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
+
+#EXTINF:-1,Nile Drama
+#EXTGRP:Egypt
+http://185.9.2.18/chid_352/index.m3u8
 
 #EXTINF:-1,Rotana Cinema Egypt
 #EXTGRP:Egypt
@@ -375,6 +379,10 @@ https://autentic-autentichistory-1-gb.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1,Azan TV
 #EXTGRP:International
 https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8
+
+#EXTINF:-1,BabyFirst
+#EXTGRP:International
+https://cdn.fast.jwp.services/v1/channel/1_jB6940Ei_TvhvIHDL/manifest.m3u8
 
 #EXTINF:-1,BBC Arabic
 #EXTGRP:International
@@ -424,6 +432,10 @@ https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8
 #EXTGRP:International
 https://timeline-samsung-uk.amagi.tv/playlist.m3u8
 
+#EXTINF:-1,Huda TV
+#EXTGRP:International
+https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8
+
 #EXTINF:-1,Islam Channel Urdu
 #EXTGRP:International
 https://live-islamtv-urdu.simplestreamcdn.com/live13/islamtv_urdu/bitrate1.isml/live.m3u8
@@ -464,6 +476,14 @@ https://jmp2.uk/plu-5b4fc274694c027be6ed3eea.m3u8
 #EXTGRP:International
 https://jmp2.uk/plu-5b4e69e08291147bd04a9fd7.m3u8
 
+#EXTINF:-1,RT Arabic
+#EXTGRP:International
+https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
+
+#EXTINF:-1,TRT Arabi
+#EXTGRP:International
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
+
 #EXTINF:-1,TV Muslim Thailand
 #EXTGRP:International
 https://vdo.plathong.net/tvmuslim/tvmuslim/playlist.m3u8
@@ -487,6 +507,10 @@ https://imn-live.esite-lab.com/hls/iraqia-news.m3u8
 #EXTINF:-1,Al Iraqia Sport
 #EXTGRP:Iraq
 https://imn-live.esite-lab.com/hls/iraqia-sports-1.m3u8
+
+#EXTINF:-1,Al Janoub TV
+#EXTGRP:Iraq
+https://live.alissahost.net/hls/test.m3u8
 
 #EXTINF:-1,Al Rasheed TV
 #EXTGRP:Iraq
@@ -552,6 +576,10 @@ https://hlspackager.akamaized.net/live/DB/PAYAM_TV/HLS/PAYAM_TV.m3u8
 #EXTGRP:Iraq
 https://hlspackager.akamaized.net/live/DB/RUDAW/HLS/RUDAW.m3u8
 
+#EXTINF:-1,UTV
+#EXTGRP:Iraq
+https://utviraqi-live.lg.mncdn.com/utviraqi-live/64c80359/index.m3u8
+
 #EXTINF:-1,Zagros
 #EXTGRP:Iraq
 https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8
@@ -563,6 +591,10 @@ https://hlspackager.akamaized.net/live/DB/ZAGROS_TV/HLS/ZAGROS_TV.m3u8
 #EXTINF:-1,Alerth Alnabawi Channel
 #EXTGRP:Jordan
 http://82.212.74.2:8000/live/7307.m3u8
+
+#EXTINF:-1,Alhaqeqa Aldawlia
+#EXTGRP:Jordan
+https://ghaasiflu.online/alhqeqa/index.m3u8
 
 #EXTINF:-1,Altaghier TV
 #EXTGRP:Jordan
@@ -631,6 +663,10 @@ https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids-originals/pla
 #EXTINF:-1,Roya Kitchen
 #EXTGRP:Jordan
 https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-kitchen/playlist.m3u8
+
+#EXTINF:-1,Roya TV
+#EXTGRP:Jordan
+https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8
 
 #EXTINF:-1,Al Khalij
 #EXTGRP:Kuwait
@@ -720,9 +756,9 @@ https://stream-hls.castr.net/64490fcefe045f1b63012886/live_22d9a1f0c69c11ee94412
 #EXTGRP:Libya
 https://cdn-globecast.akamaized.net/live/eds/libya_al_watanya/hls_roku/index.m3u8
 
-#EXTINF:-1,Tanasuh TV
-#EXTGRP:Libya
-https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8
+#EXTINF:-1,Sahara 24
+#EXTGRP:Mauritania
+https://live.saharamedias.net:3317/live/shara24live.m3u8
 
 #EXTINF:-1,2M
 #EXTGRP:Morocco
@@ -780,6 +816,18 @@ https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-arabic_g90v4ec/playlist.m3
 #EXTGRP:Morocco
 https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist.m3u8
 
+#EXTINF:-1,Medi1TV Afrique
+#EXTGRP:Morocco
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist.m3u8
+
+#EXTINF:-1,Medi1TV Arabic
+#EXTGRP:Morocco
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-arabic_g90v4ec/playlist_dvr.m3u8
+
+#EXTINF:-1,Medi1TV Maghreb
+#EXTGRP:Morocco
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist_dvr.m3u8
+
 #EXTINF:-1,Oman Althakafia
 #EXTGRP:Oman
 https://partwota.cdn.mgmlcdn.com/omcultural/smil:omcultural.stream.smil/chunklist.m3u8
@@ -824,6 +872,10 @@ https://gstream4.panet.co.il/edge/halaTV/playlist.m3u8
 #EXTGRP:Palestine
 https://htvint.mada.ps/kolalnas/index.m3u8
 
+#EXTINF:-1,Ma'an TV
+#EXTGRP:Palestine
+https://htvmada.mada.ps:4443/maannews/index.m3u8
+
 #EXTINF:-1,Musawa
 #EXTGRP:Palestine
 https://pbc.furrera.ps/musawahd/index.m3u8
@@ -856,9 +908,17 @@ https://mn-nl.mncdn.com/palabroad/live/playlist.m3u8
 #EXTGRP:Palestine
 https://htvmada.mada.ps:4443/raya/index.m3u8
 
+#EXTINF:-1,Seraj TV
+#EXTGRP:Palestine
+https://43869de4e1a0d641.servers.dvcloud.tv/hls/al_aqsa_channel/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8
+
 #EXTINF:-1,Watar TV
 #EXTGRP:Palestine
 http://htvint.mada.ps:8889/orient/index.m3u8
+
+#EXTINF:-1,Wattan TV
+#EXTGRP:Palestine
+https://htvmada.mada.ps:4443/wattan/index.m3u8
 
 #EXTINF:-1,Al Araby TV
 #EXTGRP:Qatar
@@ -1004,6 +1064,10 @@ https://aloula-redirect.vercel.app/6/playlist.m3u8
 #EXTGRP:Saudi Arabia
 https://ktvlive.online/stream/hls/ch1.m3u8
 
+#EXTINF:-1,Alwesam TV
+#EXTGRP:Saudi Arabia
+https://stream.addresses-sat.com/Alwesam/index.m3u8
+
 #EXTINF:-1,Asharq Discovery
 #EXTGRP:Saudi Arabia
 https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8
@@ -1108,6 +1172,10 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-souriya-tv/e3150760fa5fd62
 #EXTGRP:Syria
 https://live2.alalam.ir/live/Alalam/index.m3u8
 
+#EXTINF:-1,Alikhbaria Syria
+#EXTGRP:Syria
+http://185.9.2.18/chid_423/index.m3u8
+
 #EXTINF:-1,Althania
 #EXTGRP:Syria
 https://live.kwikmotion.com/syriatv02live/syriatv02.smil/playlist.m3u8
@@ -1115,6 +1183,10 @@ https://live.kwikmotion.com/syriatv02live/syriatv02.smil/playlist.m3u8
 #EXTINF:-1,Halab Today TV
 #EXTGRP:Syria
 https://mn-nl.mncdn.com/halabtoday/livestream/index.m3u8
+
+#EXTINF:-1,Prime
+#EXTGRP:Syria
+https://cdn.bestream.io/prime/prime.m3u8
 
 #EXTINF:-1,Syria Drama
 #EXTGRP:Syria
@@ -1192,6 +1264,10 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfef
 #EXTGRP:UAE
 http://37.122.156.107:4000/play/a07g/index.m3u8
 
+#EXTINF:-1,MBC 3 USA
+#EXTGRP:UAE
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-3-usa/5d58265a862a476dc7f97694addb5ded/index.m3u8
+
 #EXTINF:-1,MBC 4
 #EXTGRP:UAE
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8
@@ -1256,9 +1332,9 @@ https://live-uae-next.spacetoongo.com/ST_MENA_NEXT/hls/r9p2hjipmw2kl.m3u8
 #EXTGRP:Yemen
 https://starmenajo.com/hls/almasar/index.m3u8
 
-#EXTINF:-1,Al-Sahat TV
+#EXTINF:-1,Almahriah TV
 #EXTGRP:Yemen
-https://assahat.b-cdn.net/Assahat/assahatobs/index.m3u8
+https://starmenajo.com/hls/almahriah/index.m3u8
 
 #EXTINF:-1,Yemen Today TV
 #EXTGRP:Yemen

@@ -48,9 +48,9 @@ function getCountry(name, oldGroup) {
   const n = name.toLowerCase();
   const rules = [
     [/syria|souriya|halab|rojava|ronahi|welat|althania|ugarit|damascus|aleppo/, "Syria"],
-    [/nablus|palestine|falastin|ajyal|rajeen|watar tv|al madina|al najah|radio albalad|dr pal/, "Palestine"],
-    [/egypt|masr|cbc|nogoum|aghapy|coptic|al ghad|mix hollywood|watantv|watan tv|elsharq|9090/, "Egypt"],
-    [/jordan|amman|roya |kaifa|alerth|altaghier/, "Jordan"],
+    [/nablus|palestine|falastin|ajyal|rajeen|watar tv|al madina|al najah|radio albalad|dr pal|wattan|ma.?an tv|seraj/, "Palestine"],
+    [/egypt|masr|cbc|nogoum|aghapy|coptic|al ghad|mix hollywood|watantv|watan tv|elsharq|9090|nile drama|mazzika/, "Egypt"],
+    [/jordan|amman|roya |kaifa|alerth|altaghier|alhaqeqa/, "Jordan"],
     [/sharjah|ajman|dubai|abu dhabi|al yaum|al qamar|spacetoon|cnbc arabiya/, "UAE"],
     [/\bmbc\b/, "UAE"],
     [/bahrain/, "Bahrain"],
@@ -60,12 +60,15 @@ function getCountry(name, oldGroup) {
     [/saudi|ksa |sbc\b|ekhbariya|thaqafiya|rotana|makkah|madinah|sunnah|asharq|panorama|iqraa|thikrayat|al saudiya|bab al hara|aflam|tarab|holy quran|quran al kareem|quran radio/, "Saudi Arabia"],
     [/lebanon|lbc|mtv lebanon|future tv|tele liban|al manar|otv|noursat|nour /, "Lebanon"],
     [/iraq|kurd|rudaw|dijlah|al iraqia|al rasheed|karbala|imam hussein|samarra|zagros|ishtar|payam|mixkurdy/, "Iraq"],
-    [/morocco|2m |al aoula|arryadia|medi 1|chada|\bmfm\b/, "Morocco"],
+    [/morocco|2m |al aoula|arryadia|medi.?1|medi1|chada|\bmfm\b/, "Morocco"],
     [/tunisia|mosaique|watania/, "Tunisia"],
     [/algeria|echorouk/, "Algeria"],
     [/libya/, "Libya"],
-    [/yemen|masirah|masar/, "Yemen"],
+    [/mauritania|sahara 24/, "Mauritania"],
+    [/yemen|masirah|masar|almahriah/, "Yemen"],
     [/sudan/, "Sudan"],
+    [/alwesam/, "Saudi Arabia"],
+    [/al janoub/, "Iraq"],
     [/france 24/, "France"],
     [/asharq discovery|asharq documentary/, "Saudi Arabia"],
     [/national geographic|nat geo|history hit|autentic|documentary\+|cgtn documentary/, "International"],
@@ -81,9 +84,17 @@ function getCountry(name, oldGroup) {
   return "Arab World";
 }
 
-function isExcludedChannel(name, category, group) {
+function isAdultChannel(name, url = "") {
+  const blob = `${name} ${url}`.toLowerCase();
+  return /porn|xxx|\badult\b|erotic|erotica|playboy|hentai|nsfw|\bsex\b|sexual|18\+|redlight|babes|brazzers|onlyfans|nude|naked|xxxmovies/.test(
+    blob
+  ) && !/national geographic|discovery|documentary|kids|quran|sunnah|adult swim/.test(blob);
+}
+
+function isExcludedChannel(name, category, group, url = "") {
   const n = cleanName(name).toLowerCase();
   if (/^rojava tv$|^ronahi tv$|^rohani tv$/i.test(n)) return true;
+  if (isAdultChannel(name, url)) return true;
   if (category === "Radio" || group === "Radio") return true;
   if (/\bradio\b|\bfm\b|9090/i.test(n) && !/documentary|tv$/i.test(n)) return true;
   return false;
@@ -93,13 +104,13 @@ function isChristianChannel(name, url = "") {
   const n = name.toLowerCase();
   const u = url.toLowerCase();
   if (
-    /aghapy|coptic|noursat|nour al|nour el|nour mar|nour tv|sat-7|sat7|elsharq|emantv|tele lumiere|logos tv|koddas|koddass/i.test(
+    /aghapy|coptic|noursat|nour al|nour el|nour mar|nour tv|sat-7|sat7|elsharq|emantv|tele lumiere|logos tv|koddas|koddass|loveworld|llbn|god stands|mission asia/i.test(
       n
     )
   ) {
     return true;
   }
-  return /aghapy|icopts|nour\d+sat|noursat|sat7|elfaro4|elsharq_live|emantv|aghapykids/.test(u);
+  return /aghapy|icopts|nour\d+sat|noursat|sat7|elfaro4|elsharq_live|emantv|aghapykids|loveworld|llbn/.test(u);
 }
 
 function getCategory(name, oldGroup) {
@@ -226,6 +237,8 @@ const SHIA_NAME_PATTERNS = [
   /samarra tv/i,
   /^al manar$/i,
   /al masirah/i,
+  /vilayet/i,
+  /habib tv/i,
 ];
 
 const SHIA_URL_PARTS = [
@@ -302,11 +315,9 @@ const extras = [
   { name: "Ch4Teen Documentary", url: "https://ch14.tv/live/ch4teendoc/playlist.m3u8", country: "Kuwait", category: "Documentary" },
   { name: "Al Khalij", url: "https://mn-nl.mncdn.com/khalij/khalij/playlist.m3u8", country: "Kuwait", category: "National" },
   { name: "Assirat TV", url: "https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8", country: "Lebanon", category: "Religious" },
-  { name: "Tanasuh TV", url: "https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8", country: "Libya", category: "National" },
   { name: "Musawa", url: "https://pbc.furrera.ps/musawahd/index.m3u8", country: "Palestine", category: "National" },
   { name: "Palestine Edu", url: "https://pbc.furrera.ps/PalestineEDU/index.m3u8", country: "Palestine", category: "Education" },
   { name: "Palestine Mubasher", url: "https://pbc.furrera.ps/palestinelivehd/index.m3u8", country: "Palestine", category: "News" },
-  { name: "Al-Sahat TV", url: "https://assahat.b-cdn.net/Assahat/assahatobs/index.m3u8", country: "Yemen", category: "Religious" },
   { name: "Alhiwar TV", url: "https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8", country: "International", category: "News" },
   { name: "Asil TV", url: "https://live.asil.tv/asiltv/index.m3u8", country: "Arab World", category: "Entertainment" },
   { name: "Hala London", url: "https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8", country: "International", category: "Entertainment" },
@@ -337,6 +348,28 @@ const extras = [
   { name: "80s Rewind", url: "https://jmp2.uk/plu-5ca525b650be2571e3943c63.m3u8", country: "International", category: "Movies" },
   { name: "90s Throwback", url: "https://jmp2.uk/plu-5f4d86f519358a00072b978e.m3u8", country: "International", category: "Movies" },
   { name: "Classic Movie Westerns", url: "https://jmp2.uk/plu-61f33318210549000806a530.m3u8", country: "International", category: "Movies" },
+  // tvgarden / Famelack missing Arabic TV (Oct 2026)
+  { name: "Roya TV", url: "https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8", country: "Jordan", category: "National" },
+  { name: "Alhaqeqa Aldawlia", url: "https://ghaasiflu.online/alhqeqa/index.m3u8", country: "Jordan", category: "News" },
+  { name: "Medi1TV Arabic", url: "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-arabic_g90v4ec/playlist_dvr.m3u8", country: "Morocco", category: "National" },
+  { name: "Medi1TV Maghreb", url: "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist_dvr.m3u8", country: "Morocco", category: "National" },
+  { name: "Ma'an TV", url: "https://htvmada.mada.ps:4443/maannews/index.m3u8", country: "Palestine", category: "News" },
+  { name: "Wattan TV", url: "https://htvmada.mada.ps:4443/wattan/index.m3u8", country: "Palestine", category: "National" },
+  { name: "Seraj TV", url: "https://43869de4e1a0d641.servers.dvcloud.tv/hls/al_aqsa_channel/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8", country: "Palestine", category: "National" },
+  { name: "Alwesam TV", url: "https://stream.addresses-sat.com/Alwesam/index.m3u8", country: "Saudi Arabia", category: "National" },
+  { name: "Sahara 24", url: "https://live.saharamedias.net:3317/live/shara24live.m3u8", country: "Mauritania", category: "News" },
+  { name: "Al Janoub TV", url: "https://live.alissahost.net/hls/test.m3u8", country: "Iraq", category: "National" },
+  { name: "Prime", url: "https://cdn.bestream.io/prime/prime.m3u8", country: "Syria", category: "National" },
+  { name: "Alikhbaria Syria", url: "http://185.9.2.18/chid_423/index.m3u8", country: "Syria", category: "News" },
+  { name: "RT Arabic", url: "https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8", country: "International", category: "News" },
+  { name: "TRT Arabi", url: "https://tv-trtarabi.medya.trt.com.tr/master.m3u8", country: "International", category: "News" },
+  { name: "Nile Drama", url: "http://185.9.2.18/chid_352/index.m3u8", country: "Egypt", category: "Entertainment" },
+  { name: "Mazzika", url: "http://149.100.11.235:8080/Mazzika/index.m3u8", country: "Egypt", category: "Music" },
+  { name: "UTV", url: "https://utviraqi-live.lg.mncdn.com/utviraqi-live/64c80359/index.m3u8", country: "Iraq", category: "National" },
+  { name: "Almahriah TV", url: "https://starmenajo.com/hls/almahriah/index.m3u8", country: "Yemen", category: "News" },
+  { name: "BabyFirst", url: "https://cdn.fast.jwp.services/v1/channel/1_jB6940Ei_TvhvIHDL/manifest.m3u8", country: "International", category: "Kids" },
+  { name: "Huda TV", url: "https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8", country: "International", category: "Religious" },
+  { name: "MBC 3 USA", url: "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-3-usa/5d58265a862a476dc7f97694addb5ded/index.m3u8", country: "UAE", category: "Kids" },
 ];
 
 const existing = JSON.parse(fs.readFileSync(`${ROOT}/channels.json`, "utf8"));
@@ -346,11 +379,12 @@ for (const ch of existing) {
   if (!ch.url || !ch.name) continue;
   if (isShiaChannel(ch.name, ch.url)) continue;
   if (isChristianChannel(ch.name, ch.url)) continue;
+  if (isAdultChannel(ch.name, ch.url)) continue;
   const name = cleanName(ch.name);
   const country = getCountry(name, ch.group);
   const category = getCategory(name, ch.group);
   const group = ch.group || country;
-  if (isExcludedChannel(name, category, group)) continue;
+  if (isExcludedChannel(name, category, group, ch.url)) continue;
   byUrl.set(ch.url, applyGroupFields({
     name,
     url: ch.url,
@@ -362,7 +396,10 @@ for (const ch of existing) {
 }
 
 for (const e of extras) {
-  if (isExcludedChannel(e.name, e.category, e.country)) continue;
+  if (isShiaChannel(e.name, e.url)) continue;
+  if (isChristianChannel(e.name, e.url)) continue;
+  if (isAdultChannel(e.name, e.url)) continue;
+  if (isExcludedChannel(e.name, e.category, e.country, e.url)) continue;
   if (!byUrl.has(e.url)) {
     byUrl.set(e.url, applyGroupFields({
       name: e.name,
@@ -409,7 +446,7 @@ for (const entries of byName.values()) {
     format: primary.format,
   });
   if (primary.verified === false || entries.some((e) => e.verified === false)) item.verified = false;
-  if (!isExcludedChannel(item.name, item.category, item.group)) final.push(item);
+  if (!isExcludedChannel(item.name, item.category, item.group, item.url)) final.push(item);
 }
 
 final.sort((a, b) => {

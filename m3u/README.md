@@ -22,17 +22,15 @@ Open the shown URL, browse channels, or click **Download Playlist**.
 
 Most channels use **HLS (.m3u8)** — best for SS IPTV and the web player.
 
-Also included where found and working:
-- **DASH (.mpd)** — stored as alternate URLs when available (e.g. Asharq News)
-- **MPEG-TS / MP4 / RTMP / RTSP / UDP-RTP** — rare for public Arabic feeds; most IPTV-org MENA lists are HLS-only. RTMP/RTSP/UDP usually do not work on Samsung SS IPTV.
+Playlists are HLS-only (`.m3u8`) for SS IPTV compatibility.
 
 ## Playlist organization
 
 Channels are grouped by **country** only using `#EXTGRP:` folders (SS IPTV compatible).
 
-Examples: `Syria`, `Saudi Arabia`, `UAE`, `Radio`.
+Examples: `Syria`, `Saudi Arabia`, `UAE`.
 
-Alternate stream URLs are included as `(Alt)` entries in the M3U when available.
+Radio, Shia, Christian, and adult channels are excluded.
 
 ## Rebuild channels
 
@@ -45,6 +43,6 @@ node rebuild-channels.mjs
 | File | Purpose |
 |------|---------|
 | `index.html` / `app.js` / `style.css` | Web UI + HLS player + M3U download |
-| `channels.json` | Channel database (name, country, category, format, alt URLs) |
+| `channels.json` | Channel database (name, country, category, format) |
 | `MyArabicTV.m3u` | Playlist for IPTV apps |
 | `rebuild-channels.mjs` | Reorganize, dedupe, verify, and export playlist |

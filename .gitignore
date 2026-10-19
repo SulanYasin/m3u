@@ -2,5 +2,8 @@
 Thumbs.db
 *.log
 _*.json
+_src/
+_src_*/
+scan-*.mjs
 .node_modules/
 .vercel/
